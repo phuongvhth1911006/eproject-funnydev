@@ -18,6 +18,6 @@ mssql.connect(config,function (err) {
 });
 var db = new mssql.Request();
 //routing -- định tuyến
-app.get('/',function (req,res) {
+app.get('/test',function (req,res) {
     res.render('test');
 });
