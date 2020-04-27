@@ -19,5 +19,5 @@ mssql.connect(config,function (err) {
 var db = new mssql.Request();
 //routing -- định tuyến
 app.get('/',function (req,res) {
-    res.send('abc');
+    res.render('test');
 });
