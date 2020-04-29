@@ -1,0 +1,13 @@
+.section{
+    float: left;
+    width: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+header{
+    height: 100px;
+}
