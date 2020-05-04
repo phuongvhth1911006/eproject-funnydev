@@ -1,34 +1,34 @@
 <header class="section">
-    <div class="container">
+    <div class="container" id="nav_bar">
         <div class="row">
-            <div class="logo col-xs-2">
+            <div class="col-xs-2" id="logo">
                 <div class="full">
-                    <a style="" href="/"><img src="imgs/logo.png"></a>
+                    <a style="" href="/"><img style="width: 120px" src="imgs/logo.png"></a>
                 </div>
             </div>
-            <div class="bar_item col-xs-2">
+            <div class="col-xs-3"></div>
+            <div class="bar_item col-xs-2" onmouseenter="bar_enter(this)" onmouseleave="bar_leave(this)">
                 <div class="full">
                     <a href="/">Home</a></div>
                 </div>
-            <div class="bar_item col-xs-2">
+            <div class="bar_item col-xs-2" onmouseenter="bar_enter(this)" onmouseleave="bar_leave(this)">
                 <div class="full">
-                    <a href="/">Parks</a></div>
+                    <a href="/parks">Parks</a></div>
                 </div>
-            <div class="bar_item bar_dd col-xs-2">
+            <div class="bar_item bar_dd col-xs-2" onmouseenter="bar_enter(this)" onmouseleave="bar_leave(this)">
                 <div class="full">
                     <a href="/">Animals</a>
                     <div class="dd">
                         <ul>
-                            <li>Loai 1</li>
-                            <li>Loai 1</li>
-                            <li>Loai 1</li>
-                            <li>Loai 1</li>
+                            <li onmouseenter="item_enter(this)" onmouseleave="item_leave(this)"><a href="/">Loai 1</a></li>
+                            <li onmouseenter="item_enter(this)" onmouseleave="item_leave(this)"><a href="/">Loai 2</a></li>
+                            <li onmouseenter="item_enter(this)" onmouseleave="item_leave(this)"><a href="/">Loai 3</a></li>
+                            <li onmouseenter="item_enter(this)" onmouseleave="item_leave(this)"><a href="/">Loai 4</a></li>
                         </ul>
                     </div>
                 </div>
 
             </div>
         </div>
-
     </div>
 </header>
