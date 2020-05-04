@@ -73,8 +73,29 @@ img{
     color: #CBBD9A;
 }
 #slide-banner{
-    height: 500px;
+    height: 700px;
     background-image: url("../imgs/phuong/banner_home3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+.text{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top:30%;
+    left:0;
+    color: #ffffff;
+}
+.text h1{
+    font-size: 55px;
+}
+.text p{
+    font-size: 16px;
+    padding: 10px;
+}
+.text .btn_info{
+    background-color: #CBBD9A ;
+    border: none;
+    color: #ffffff;
+    padding: 10px 25px;
 }
