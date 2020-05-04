@@ -24,3 +24,6 @@ app.get('/',function (req,res) {
 app.get('/parks',function (req,res) {
     res.render('parks');
 });
+app.get('/species',function (req,res) {
+    res.render('species');
+});
