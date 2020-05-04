@@ -42,6 +42,7 @@ img{
     display: none;
     transition: display 1s;
     z-index: 50;
+    background-color: #ffffff;
 }
 .dd ul{
     list-style: none;
