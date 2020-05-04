@@ -1,0 +1,25 @@
+<script type="text/javascript" src="jquery/jquery.js"></script>
+
+<script type="text/javascript">
+    function bar_enter(e) {
+        //$('.bar_item').removeClass('bar_enter');
+        e.classList.add('bar_enter');
+    }
+    function bar_leave(e) {
+        e.classList.remove('bar_enter');
+    }
+    function item_enter(e) {
+        e.classList.add('item_hover');
+    }
+    function item_leave(e) {
+        e.classList.remove('item_hover');
+    }
+    /*
+    function dd_show(e) {
+        e.show();
+    }
+    function dd_hide(e) {
+        e.hide();
+    }
+     */
+</script>
