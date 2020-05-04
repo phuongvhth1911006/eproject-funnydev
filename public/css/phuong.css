@@ -8,6 +8,10 @@ body{
 img{
     max-width: 100%;
 }
-.logo{
-
- }
+.full{
+    float: left;
+    width: 100%;
+}
+.logo .full a{
+    padding: 50px;
+}
