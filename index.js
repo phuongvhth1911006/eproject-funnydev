@@ -21,3 +21,6 @@ var db = new mssql.Request();
 app.get('/',function (req,res) {
     res.render('home');
 });
+app.get('/parks',function (req,res) {
+    res.render('parks');
+});
