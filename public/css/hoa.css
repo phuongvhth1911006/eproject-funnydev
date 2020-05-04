@@ -1,0 +1,47 @@
+.section_hoa{
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+.container_hoa{
+    float: left;
+    width: 100%;
+}
+.decription_hoa{
+    text-align: center;
+    padding: 30px;
+    font-size:20px ;
+    font-family: 'Open Sans', sans-serif;
+}
+.product_hoa{
+    float: left;
+}
+.image1{
+    padding: 20px;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.avt_hoa{
+    background-image:url("public/imgs/hoa/hinh-nen-con-ho-5.jpg");
+    background-position :center;
+    background-size:cover;
+    height: 700px;
+    color: yellow;
+    font-size: 30px;
+
+    padding-top: 18%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.decr1_hoa{
+    color: orange;
+    font-size: 30px;
+
+}
+.decr2_hoa{
+    text-align: left;
+}
+img{
+    max-width: 100%;
+}
