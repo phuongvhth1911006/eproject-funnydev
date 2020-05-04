@@ -23,9 +23,9 @@ img{
     padding: 20px;
 }
 .info{
-    margin: 20px auto;
+    margin: 20px 20px;
     width: 100%;
-    height: auto;
+    height: 380px;
 }
 .box{
     float: left;
