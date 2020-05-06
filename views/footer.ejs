@@ -14,6 +14,24 @@
     function item_leave(e) {
         e.classList.remove('item_hover');
     }
+    function btn_enter(e) {
+        e.classList.add('btn_enter');
+    }
+    function btn_leave(e) {
+        e.classList.remove('btn_enter');
+    }
+    setInterval(function () {
+        if ($('#banner1').position().left == 0){
+            $('#banner1').display='none';
+            $('#banner1').animate({left: "-100%"},700);
+            $('#banner2').animate({left: 0},700);
+        }else{
+            $('#banner1').animate({left: 0},700);
+            $('#banner2').display = 'none';
+            $('#banner2').animate({left: "100%"},700);
+        }
+
+    },5000);
     /*
     function dd_show(e) {
         e.show();
