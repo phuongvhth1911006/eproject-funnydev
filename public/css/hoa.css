@@ -10,15 +10,10 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height:700px;
     color: #07ffdf;
     padding-top: 750px;
     font:  500 30px/1.5 'Open Sans', sans-serif;
-
-}
-.avt_hoa:hover {
-    background-image: url("/imgs/hoa/Hinh-nen-con-ho-nam-nghi-trong-rung.jpg");
-    transition:background-image 2500ms;
 }
 span{
     color: white;
