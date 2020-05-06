@@ -3,35 +3,48 @@
 <%- include('head.ejs') -%>
 <body>
     <%- include('header.ejs') -%>
-        <div class="section" style="height: 700px"></div>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="home_abus text-center">
-                        <h1>ABOUT US</h1>
-                        <p>We are Funny-dev team. This is our new eproject. Enjoy it!</p>
-                        <p>Our team has 3 members. </p>
+    <div class="section" style="position: relative">
+        <div class="slide_header">
+            <ul class="section">
+                <li id="banner1" style="background-image: url('imgs/phuong/banner_home3.jpg')"></li>
+                <li id="banner2" style="background-image: url('imgs/phuong/banner_home4.jpg')"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" style="height: 700px"></div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="home_abus text-center col-xs-10">
+                    <h1>ABOUT US</h1>
+                    <p style="font-style: italic">We are Funny-dev team. This is our new eproject. Enjoy it!</p>
+                    <p style="color: #6E6B66; font-family: 'Trirong', serif;">
+                        Our team has 3 members: Vu Hoang Phuong, Vu Thi Mai Hoa and Cao Vuong Bach. We are welcome all of you to visit our website.
+                        This website provides information of national parks, animals and share some advise, review from people who came our parks.
+                    </p>
+                </div>
+                <div class="col-xs-1"></div>
+                <div class="section">
+                    <div class="col-xs-4">
+                        <div class="full">
+                            <img src="" alt="">
+                        </div>
                     </div>
-                    <div class="section">
-                        <div class="col-xs-4">
-                            <div class="full">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="full">
+                    <div class="col-xs-4">
+                        <div class="full">
 
-                            </div>
                         </div>
-                        <div class="col-xs-4">
-                            <div class="full">
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="full">
 
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <%- include('footer.ejs') -%>
 </body>
 </html>
