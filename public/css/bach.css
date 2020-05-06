@@ -11,9 +11,7 @@ img{
 }
 .headbanner{
     width: 100%;
-    height: 600px;
-    background-image: url("../imgs/bach/catba-banner.jpg");
-    background-size: cover;
+    height: 700px;
 }
 .descri2{
     margin-left: 64px;
@@ -93,40 +91,6 @@ img{
 .zoom:hover img{
     transform: scale(1.1);
 }
-#collect{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100%*3);
-    height: 100%;
-}
-.image{
-    width: calc(100%/3);
-    float: left;
-}
-.image img{
-    width: 100%;
-    height: 800px;
-}
-.slide button {
-    font-size: 18px;
-    padding: 8px 13px;
-    position: absolute;
-    opacity: 0.6;
-    z-index: 2;
-    font-weight: bold;
-    background-color: #bbbbbb;
-    color: white;
-    top: 280px;
-}
-.slide button:hover{
-    opacity: 1;
-}
-#prev{
-    left: 0;
-}
-#next{
-    right: 0;
-}
+
 
 
