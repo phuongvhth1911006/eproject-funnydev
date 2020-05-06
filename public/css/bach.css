@@ -108,7 +108,7 @@ img{
     width: 100%;
     height: 800px;
 }
-button {
+.slide button {
     font-size: 18px;
     padding: 8px 13px;
     position: absolute;
@@ -119,7 +119,7 @@ button {
     color: white;
     top: 280px;
 }
-button:hover{
+.slide button:hover{
     opacity: 1;
 }
 #prev{
