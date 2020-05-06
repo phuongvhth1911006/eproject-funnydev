@@ -27,3 +27,6 @@ app.get('/parks',function (req,res) {
 app.get('/species',function (req,res) {
     res.render('species');
 });
+app.get('/animal',function (req,res) {
+    res.render('animal');
+});
