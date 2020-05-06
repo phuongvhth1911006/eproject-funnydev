@@ -33,6 +33,10 @@ img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
 }
+.card{
+    width: 100%;
+    height: 480px;
+}
 .name{
     width: 90%;
     display: block;
@@ -45,7 +49,7 @@ img{
 }
 .slide{
     width: 100%;
-    height: 800px;
+    height: 700px;
     position: relative;
     object-fit: cover;
     background-color: white;
@@ -104,7 +108,7 @@ img{
     width: 100%;
     height: 800px;
 }
-button {
+.slide button {
     font-size: 18px;
     padding: 8px 13px;
     position: absolute;
@@ -115,7 +119,7 @@ button {
     color: white;
     top: 280px;
 }
-button:hover{
+.slide button:hover{
     opacity: 1;
 }
 #prev{

@@ -5,16 +5,6 @@
     padding-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
 }
-.avt_hoa {
-    background-image: url("/imgs/hoa/hinh-nen-con-ho-5.jpg");
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    height:700px;
-    color: #07ffdf;
-    padding-top: 750px;
-    font:  500 30px/1.5 'Open Sans', sans-serif;
-}
 span{
     color: white;
 }
