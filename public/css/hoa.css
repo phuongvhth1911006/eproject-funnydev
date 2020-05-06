@@ -2,46 +2,78 @@
     float: left;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
-.container_hoa{
-    float: left;
+.avt_hoa {
+    background-image: url("/imgs/hoa/hinh-nen-con-ho-5.jpg");
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    color: #07ffdf;
+    padding-top: 750px;
+    font:  500 30px/1.5 'Open Sans', sans-serif;
+
+}
+.avt_hoa:hover {
+    background-image: url("/imgs/hoa/Hinh-nen-con-ho-nam-nghi-trong-rung.jpg");
+    transition:background-image 2500ms;
+}
+span{
+    color: white;
+}
+h1{
+    color: black;
 }
 .decription_hoa{
-    text-align: center;
-    padding: 30px;
+    padding: 50px;
     font-size:20px ;
     font-family: 'Open Sans', sans-serif;
+
+}
+.decr1_hoa{
+    color: rgba(255, 165, 0, 0.55);
+    text-align: left;
+    padding-left: 10px;
+    display: block;
+}
+
+.decr2_hoa{
+    text-align: left;
+    color: #bbbbbb;
+    font-size: 17px;
+    padding-top: 35px;
+    display: block;
 }
 .product_hoa{
     float: left;
 }
-.image1{
-    padding: 20px;
-    width: 50%;
-    float: left;
-    text-align: center;
+h2{
+    font-size: 50px;
 }
-.avt_hoa{
-    background-image:url("public/imgs/hoa/hinh-nen-con-ho-5.jpg");
-    background-position :center;
-    background-size:cover;
-    height: 700px;
-    color: yellow;
-    font-size: 30px;
-
-    padding-top: 18%;
-    font-family: 'Open Sans', sans-serif;
+.image {
+    height :335px;
 }
-
-.decr1_hoa{
-    color: orange;
-    font-size: 30px;
-
+.image1_hoa{
+    color: black;
 }
-.decr2_hoa{
-    text-align: left;
+.image1_hoa:hover{
+    filter:brightness(50%);
+
+    color: #bbbbbb;
 }
 img{
-    max-width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
+.box{
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tour{
+    padding: 20px 0 30px;
+}
+
