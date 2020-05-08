@@ -3,15 +3,14 @@
 <script type="text/javascript">
     window.onscroll= function () {myScroll()};
     function myScroll() {
-        var tg = $('#nav_bar').css('backgroundColor');
-        if ($('body').scrollTop() > 0){
-            $('#nav_bar').css('backgroundColor',tg);
-            $('.bar_item .full >a').css('color','white');
-            $('#logo .full a img').attr("src", "imgs/phuong/logo_white.png");
-        }else if($('body').scrollTop() == 0){
+        if ($('html').scrollTop() > 0){
             $('#nav_bar').css('backgroundColor','white');
             $('.bar_item .full >a').css('color','#2F2911');
             $('#logo .full a img').attr("src", "imgs/phuong/logo.png");
+        }else if($('html').scrollTop() == 0){
+            $('#nav_bar').css('backgroundColor','unset');
+            $('.bar_item .full >a').css('color','white');
+            $('#logo .full a img').attr("src", "imgs/phuong/logo_white.png");
         }
     }
     function bar_enter(e) {
