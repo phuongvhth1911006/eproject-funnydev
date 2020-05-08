@@ -2,63 +2,89 @@
     float: left;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Trirong", serif;
 }
-span{
-    color: white;
-}
+
 h1{
     color: black;
+    padding-bottom: 10px;
 }
 .decription_hoa{
-    padding: 50px;
+    padding: 40px;
     font-size:20px ;
-    font-family: 'Open Sans', sans-serif;
-
 }
-.decr1_hoa{
-    color: rgba(255, 165, 0, 0.55);
-    text-align: left;
-    padding-left: 10px;
-    display: block;
-}
-
-.decr2_hoa{
-    text-align: left;
-    color: #bbbbbb;
-    font-size: 17px;
-    padding-top: 35px;
-    display: block;
-}
-.product_hoa{
-    float: left;
-}
-h2{
-    font-size: 50px;
-}
-.image {
-    height :335px;
-}
-.image1_hoa{
+.decr1_hoa {
     color: black;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
 }
-.image1_hoa:hover{
-    filter:brightness(50%);
-
-    color: #bbbbbb;
-}
-img{
-    display: block;
+.info_hoa{
     width: 100%;
-    height: 100%;
+    margin: 40px 0;
+    padding: 30px 0;
+    background-color: rgba(238, 238, 238, 0.68);
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.info1{
+    padding-left: 20%;
+    padding-right: 5%;
+}
+.info3{
+    padding-left: 5%;
+    padding-right: 20%;
+}
+.product{
+    margin:20px 0;
+}
+.product1:hover{
+    filter:brightness(50%);
+}
+.tour{
+    font-size: 16px;
+    padding: 0;
+    background-color: rgba(238, 238, 238, 0.68);
+    margin: 40px 0 ;
 }
 .box{
     float: left;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
-.tour{
-    padding: 20px 0 30px;
+.box:hover{
+    filter:brightness(50%);
 }
+.box1{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.box2{
+    padding:30px;
 
+}
+h6{
+    border: 1px solid red;
+    color: red;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 4px;
+    border-radius: 5px;
+}
+h4{
+    color: orange;
+}
+h5 {
+    font-size: 50px;
+    color: orange;
+    font-weight: 300;
+}
+.info4{
+    padding:20px 0 50px 0;
+}
