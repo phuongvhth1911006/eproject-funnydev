@@ -11,6 +11,13 @@ a{
 img{
     max-width: 100%;
 }
+.bar_item {
+    text-align: right;
+}
+.bar_header div{
+    padding-left: 0;
+    padding-right: 0;
+}
 .full{
     float: left;
     width: 100%;
@@ -157,7 +164,6 @@ img{
 }
 .home_abus h1{
     color: rgb(47, 41, 17);
-    text-transform: uppercase;
     letter-spacing: 0px;
     font-size: 26px;
     line-height: 40px;
@@ -175,28 +181,30 @@ img{
 .home_abus_desc{
     padding-top: 35px;
 }
+.home_abus .col-xs-4{
+    padding: 20px;
+}
 .home_abus .full{
     padding: 0 20px 0px 20px;
 }
 .home_abus .full img{
     width: 100%;
-    height: 330px;
+    height: 300px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 6px 30px 0;
 }
 .home_abus .full h4{
     padding-top: 25px;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.5px;
-    text-transform: uppercase;
     color: rgb(47, 41, 17);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Trirong', serif;
     margin:0;
 }
 .home_abus .full p{
     font-size: 16px;
-
+    font-style: italic;
 }
 #footer{
     background-color: #444;
