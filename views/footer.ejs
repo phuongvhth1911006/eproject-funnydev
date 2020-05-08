@@ -21,14 +21,12 @@
         e.classList.remove('btn_enter');
     }
     setInterval(function () {
-        if ($('#banner1').position().left == 0){
-            $('#banner1').display='none';
-            $('#banner1').animate({left: "-100%"},700);
-            $('#banner2').animate({left: 0},700);
+        if ($('.banner1').position().left == 0){
+            $('.banner1').animate({left: "-100%"},700);
+            $('.banner2').animate({left: 0},700);
         }else{
-            $('#banner1').animate({left: 0},700);
-            $('#banner2').display = 'none';
-            $('#banner2').animate({left: "100%"},700);
+            $('.banner1').animate({left: 0},700);
+            $('.banner2').animate({left: "100%"},700);
         }
 
     },5000);
@@ -42,5 +40,249 @@
      */
 </script>
 <div class="section" id="footer">
-
+    <footer class="fixed full-width">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col-sm-4 col-md-2 padding-leftright-null">
+                    <h6 class="heading white margin-bottom-extrasmall">Dolomia</h6>
+                    <ul class="sitemap">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Elements</a></li>
+                        <li><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-2 padding-leftright-null">
+                    <h6 class="heading white margin-bottom-extrasmall">Useful Links</h6>
+                    <ul class="useful-links">
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Download Catalog</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-4 padding-leftright-null">
+                    <h6 class="heading white margin-bottom-extrasmall">Contact Us</h6>
+                    <ul class="info">
+                        <li>Phone <a href="">+39 123456789</a></li>
+                        <li>Mail <a href="">mail@domain.com</a></li>
+                        <li>Monday to Friday <span class="white">9.00 am to 8.00 pm</span><br>Saturday from <span class="white">9.00 am to 12.00 pm</span></li>
+                        <li><a href="">322 Moon St, Venice<br>
+                                Italy, 1231</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 padding-leftright-null">
+                    <h6 class="heading white margin-bottom-extrasmall">Passionate About Nature</h6>
+                    <p class="grey-light">Sign up for Dolomia mounthly newsletter and get to know more about our latest adventures and much mores...</p>
+                    <div id="newsletter-form" class="padding-onlytop-xs">
+                        <form class="search-form">
+                            <div class="form-input">
+                                <input type="text" placeholder="Your email ID">
+                                <span class="form-button">
+                                            <button type="button">Sign Up</button>
+                                        </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="row no-margin">
+                    <div class="col-md-8 padding-leftright-null">
+                        © 2016 Dolomia -  Hiking &amp; Outdoor Html Template Handmade by puredesignThemes
+                    </div>
+                    <div class="col-md-4 padding-leftright-null">
+                        <ul class="social">
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
+
+<style>
+    footer.fixed.full-width,
+    .footer.fixed.full-width{
+        max-width: 1920px;
+        margin: 0;
+        left: 0;
+        right: 0;
+        padding: 50px 0;
+    }
+
+    .padding-leftright-null{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    footer ul, footer ol, footer .info{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline;
+        list-style: none;
+        height: unset;
+    }
+
+    footer ul.sitemap li, footer ul.info li, footer ul.useful-links li,
+    .footer ul.sitemap li, .footer ul.info li, .footer ul.useful-links li{
+        color: #d1d2d3;
+        font-family: "Trirong", serif;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    footer p,
+    .footer p{
+        max-width: 350px;
+        font-family: "Trirong", serif;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        color: #d1d2d3 !important;
+    }
+
+    #newsletter-form form .form-input input{
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        outline: inherit;
+        padding: 11px 50px 11px 9px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+    }
+
+    #newsletter-form form .form-input span.form-button{
+        position: absolute;
+        width: 80px;
+        height: 42px;
+        right: 0;
+        top: 0px;
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 38px;
+        color: white;
+        border-radius: 0 2px 2px 0;
+        background-color: #CBBD9A;
+        text-align: center;
+        transition: all .4s ease;
+    }
+
+    #newsletter-form form .form-input{
+        width: 100%;
+        position: relative;
+    }
+
+    #newsletter-form form .form-input span.form-button:hover{
+        background-color: #2F2911;
+        border-radius: 0 2px 2px 0;
+        transition: all .4s ease;
+    }
+
+    #newsletter-form form .form-input span.form-button button{
+        background: transparent;
+        outline: none;
+        border: 0;
+    }
+
+    h6.heading{
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0;
+        color: white !important;
+    }
+
+    footer ul.sitemap li a,
+    footer ul.info li a, footer ul.useful-links li a,
+    .footer ul.sitemap li a, .footer ul.info li a,
+    footer ul.useful-links li a{
+        color: #d1d2d3;
+        font-family: "Trirong", serif;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        font-weight: 300;
+    }
+
+    footer.fixed.full-width .container,
+    .footer.fixed.full-width .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    footer .copy, .footer .copy{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 18px;
+        margin-top: 18px;
+        color: #d1d2d3;
+        font-family: "Trirong", serif;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 300;
+        position: relative;
+    }
+
+    .row.no-margin{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .padding-leftright-null{
+        float: left;
+    }
+
+    footer ul.social{
+        display: flex;
+    }
+
+    footer ul.social > li{
+        margin-right: 10px;
+    }
+
+    footer ul.social li a, .footer ul.social li a{
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 30px;
+        height: 30px;
+        width: 30px;
+        background-color: #CBBD9A;
+        border-radius: 15px;
+        transition: all .4s ease;
+        box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer ul.social li a .fa,
+    .footer ul.social li a .fa{
+        color: white;
+    }
+
+    footer ul.social li a:hover, .footer ul.social li a:hover{
+        color: white;
+        background-color: #2F2911;
+        transition: all .4s ease;
+    }
+
+    footer .copy a:hover, .footer .copy a:hover{
+        color: #CBBD9A;
+    }
+
+
+</style>
