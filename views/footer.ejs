@@ -1,6 +1,19 @@
 <script type="text/javascript" src="jquery/jquery.js"></script>
 
 <script type="text/javascript">
+    window.onscroll= function () {myScroll()};
+    function myScroll() {
+        var tg = $('#nav_bar').css('backgroundColor');
+        if ($('body').scrollTop() > 0){
+            $('#nav_bar').css('backgroundColor',tg);
+            $('.bar_item .full >a').css('color','white');
+            $('#logo .full a img').attr("src", "imgs/phuong/logo_white.png");
+        }else{
+            $('#nav_bar').css('backgroundColor','white');
+            $('.bar_item .full >a').css('color','#2F2911');
+            $('#logo .full a img').attr("src", "imgs/phuong/logo.png");
+        }
+    }
     function bar_enter(e) {
         //$('.bar_item').removeClass('bar_enter');
         e.classList.add('bar_enter');
@@ -8,12 +21,7 @@
     function bar_leave(e) {
         e.classList.remove('bar_enter');
     }
-    function item_enter(e) {
-        e.classList.add('item_hover');
-    }
-    function item_leave(e) {
-        e.classList.remove('item_hover');
-    }
+
     function btn_enter(e) {
         e.classList.add('btn_enter');
     }
