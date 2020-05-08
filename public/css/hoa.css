@@ -43,6 +43,9 @@ h1{
 .product1:hover{
     filter:brightness(50%);
 }
+.info_hoa span{
+    font-size: 40px;
+}
 .tour{
     font-size: 16px;
     padding: 0;
@@ -54,6 +57,9 @@ h1{
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 0 !important;
     padding-right: 0 !important;
+    background-color: white;
+    margin-left: -10px;
+    margin-right:20px;
 }
 .box:hover{
     filter:brightness(50%);
