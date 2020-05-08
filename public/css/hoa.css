@@ -63,10 +63,10 @@ h1{
     padding-right: 0 !important;
 }
 .box2{
-    padding:30px;
+    padding:20px;
 
 }
-h6{
+.box h6{
     border: 1px solid red;
     color: red;
     width: 100px;
@@ -77,10 +77,10 @@ h6{
     padding-top: 4px;
     border-radius: 5px;
 }
-h4{
+.box h4{
     color: orange;
 }
-h5 {
+.tour h5 {
     font-size: 50px;
     color: orange;
     font-weight: 300;
