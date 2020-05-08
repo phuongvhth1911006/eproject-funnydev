@@ -102,10 +102,10 @@ img{
     background-size: cover;
     top:0;
 }
-#banner1{
+.banner1{
     left:0;
 }
-#banner2{
+.banner2{
     left:100%;
 }
 .bg_fade{
