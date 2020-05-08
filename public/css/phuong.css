@@ -49,7 +49,7 @@ img{
     position: absolute;
     top:72px;
     left:0;
-    width: 250%;
+    width: 200%;
     padding-top: 10px;
     display: none;
     transition: display 1s;
@@ -75,14 +75,14 @@ img{
     display: block !important;
 }
 .bar_item:hover .full >a{
-    color: #CBBD9A !important;
+    color: #f1d899 !important;
 }
 .bar_item .full a{
     text-decoration: none;
 }
 .dd ul li:hover a{
     padding-left: 30px !important;
-    color: #CBBD9A !important;
+    color: #f1d899 !important;
 }
 .slide_header{
     position: absolute;
@@ -127,7 +127,7 @@ img{
     z-index: 10;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color .5s ease-out;
-    box-shadow: 0px 2px 7px -2px rgba(156, 156, 156, 0.5);
+    box-shadow: 0px 2px 9px -2px rgba(156, 156, 156, 0.5);
 }
 .text_header{
     position: absolute;
@@ -168,7 +168,7 @@ img{
 .btn_enter{
 
 }
-.home_abus div{
+.home_abus >div{
     padding: 10px 0;
 }
 .home_abus h1{
@@ -191,10 +191,14 @@ img{
     padding-top: 35px;
 }
 .home_abus .col-xs-4{
-    padding: 20px;
+    padding: 0px;
+}
+.home_abus .row{
+    margin-right: -30px;
+    margin-left: -30px;
 }
 .home_abus .full{
-    padding: 0 20px 0px 20px;
+    padding: 0 30px 0px 30px;
 }
 .home_abus .full img{
     width: 100%;
@@ -214,6 +218,11 @@ img{
 .home_abus .full p{
     font-size: 16px;
     font-style: italic;
+}
+.home_service{
+    display: block;
+    font-size: 40px;
+    transition: color .4s ease;
 }
 #footer{
     background-color: #444;
