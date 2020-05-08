@@ -96,6 +96,12 @@ img{
 .slide_header > ul{
     position: relative;
 }
+.banner1{
+    left:0;
+}
+.banner2{
+    left:100%;
+}
 .slide_header ul >li{
     position: absolute;
     z-index: 1;
@@ -105,12 +111,6 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     top:0;
-}
-.banner1{
-    left:0;
-}
-.banner2{
-    left:100%;
 }
 .bg_fade{
     position: absolute;
