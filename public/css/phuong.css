@@ -301,6 +301,9 @@ img{
 .slide_content .col-md-3:hover{
     top: -10px;
 }
+.slide_content .col-md-3:hover .slide_fade{
+    top: -10px;
+}
 .slide_content .full >h4, .slide_content .full >p{
     float:left;
     width: calc(100%/3);
