@@ -299,7 +299,7 @@ img{
     transition: top 0.5s ease-out;
 }
 .slide_content .col-md-3:hover{
-    top: -15px;
+    top: -10px;
 }
 .slide_content .full >h4, .slide_content .full >p{
     float:left;
