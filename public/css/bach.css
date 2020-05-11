@@ -228,7 +228,7 @@ h6.title{
     position: relative;
 }
 .view{
-    width: 3600px;
+    width: 2700px;
     height: 400px;
     position: absolute;
     left: -450px;
@@ -253,6 +253,9 @@ h6.title{
 }
 .active{
     opacity: 1;
+}
+.viewpoint{
+    overflow: hidden;
 }
 
 
