@@ -317,6 +317,7 @@
             e.classList.remove('btn_enter');
         }
         var cnt_time=1;
+
         setInterval(function () {
             //slide banner
             if ($('.banner1').position().left == 0){
@@ -326,7 +327,7 @@
                 $('.banner1').animate({left: 0},700);
                 $('.banner2').animate({left: "100%"},700);
             }
-            //slide content
+            /*slide content
             $('.slide_item0').addClass('slide.item6');
             $('.slide_item6').removeClass('slide_item1');
             $('.slide_item2').addClass('slide.item1');
@@ -337,6 +338,7 @@
             $('.slide_item3').removeClass('slide_item4');
             $('.slide_item5').addClass('slide.item4');
             $('.slide_item4').removeClass('slide_item5');
+            */
         },5000);
         /*
         function dd_show(e) {
