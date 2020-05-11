@@ -43,6 +43,15 @@ h1{
 .product1:hover{
     filter:brightness(50%);
 }
+.product1 img{
+    transition: transform .4s ease;
+}
+.product1:hover img{
+    transform: scale(1.1);
+}
+.info_hoa span{
+    font-size: 40px;
+}
 .tour{
     font-size: 16px;
     padding: 0;
@@ -52,15 +61,19 @@ h1{
 .box{
     float: left;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
-.box:hover{
-    filter:brightness(50%);
+    background-color: white;
+    margin-left: -10px;
+    margin-right:20px;
 }
 .box1{
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+.box1 :hover{
+    filter:brightness(50%);
 }
 .box2{
     padding:20px;
@@ -75,7 +88,11 @@ h1{
     text-align: center;
     margin-top: 20px;
     padding-top: 4px;
-    border-radius: 5px;
+    border-radius: 4px;
+}
+.box h6:hover{
+    background-color: red !important;
+    color:#ffffff !important;
 }
 .box h4{
     color: orange;
