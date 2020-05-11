@@ -366,7 +366,7 @@ img{
     box-shadow: rgba(0, 0, 0, 0.2) 0 6px 30px 0;
 }
 .slide_content >.section .slide_fade{
-    height: 100%;
+    height: calc((50vw - 30px*4 - 30px - 30px)/4 + 120px + 285px);
     z-index: 2;
     left:0;
     padding: 30px 40px 19px 0;
