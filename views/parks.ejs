@@ -101,6 +101,30 @@
             </div>
         </div>
         <div class="section">
+            <div class="background">
+                <div class="review">
+                    <div class="owl-carousel">
+                        <div class="comment">
+                            <p>A great place to visit. Lots of green, easy to relax. Most paths are marked so that you can’t get lost in the jungle.
+                                I would definitely recommend a visit to all Cat Ba visitors.</p>
+                            <p>By: #przedmojskagotuje</p>
+                            <p>From Google Review</p>
+                        </div>
+                        <div class="comment">
+                            <p>Amazing surroundings, great atmosphere, sometimes the trekking might be difficult but its with it.</p>
+                            <p>By: Yannick Can Soytok</p>
+                            <p>From Google Review</p>
+                        </div>
+                        <div class="comment">
+                            <p>Stunning view and only a short walk up to the viewpoint.</p>
+                            <p>By: Raphael Erni</p>
+                            <p>From Google Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
             <div class=" line center">
                 <div class="content">
                     <h2 class="text-center padding_top">
@@ -172,8 +196,8 @@
             <div class="line center padding_top">
                 <h2 class="text-center">Featured Animals</h2>
                 <div class="collect2">
-                    <div class="view">
-                        <a href="#" class="rollitem cloned">
+                    <div class="owl-carousel">
+                        <div class="rollitem">
                             <div class="box_b">
                                 <img src="/imgs/bach/leopard1.jpg"/>
                                 <div class="detail col-md-12">
@@ -190,8 +214,8 @@
                                     <h4 class="text-center">Red-Tailed Hawk</h4>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="rollitem active">
+                        </div>
+                        <div class="rollitem">
                             <div class="box_b">
                                 <img src="/imgs/bach/catba7.jpg"/>
                                 <div class="detail col-md-12">
@@ -208,8 +232,8 @@
                                     <h4 class="text-center">Red-Tailed Hawk</h4>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="rollitem active">
+                        </div>
+                        <div class="rollitem">
                             <div class="box_b">
                                 <img src="/imgs/bach/dog.jpg"/>
                                 <div class="detail col-md-12">
@@ -226,8 +250,8 @@
                                     <h4 class="text-center">Red-Tailed Hawk</h4>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="rollitem">
+                        </div>
+                        <div class="rollitem">
                             <div class="box_b">
                                 <img src="/imgs/bach/tiger.jpg"/>
                                 <div class="detail col-md-12">
@@ -244,8 +268,8 @@
                                     <h4 class="text-center">Red-Tailed Hawk</h4>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="rollitem">
+                        </div>
+                        <div class="rollitem">
                             <div class="box_b">
                                 <img src="/imgs/bach/leopard1.jpg"/>
                                 <div class="detail col-md-12">
@@ -262,8 +286,8 @@
                                     <h4 class="text-center">Red-Tailed Hawk</h4>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="rollitem cloned">
+                        </div>
+                        <div class="rollitem">
                             <div class="box_b">
                                 <img src="/imgs/bach/catba7.jpg"/>
                                 <div class="detail col-md-12">
@@ -280,43 +304,65 @@
                                     <h4 class="text-center">Red-Tailed Hawk</h4>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-
                 </div>
 
             </div>
         </div>
-
+    <div class="section contact text-center">
+        <p>Would you like more info about this park?</p>
+        <p>Call us at +40 45615654 or</p>
+        <button>Contact Us</button>
+    </div>
 </section>
 <%- include('footer.ejs') -%>
 <script src="/jquery/jquery.js" type="text/javascript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script type="text/javascript">
      var current = 1;
      var sl = $(".rollitem");
-     setInterval(function () {
-         if (current < 3){
-             current++;
-             for (var i=1;i<sl.length;i++){
-                 if((i != current) & (i!=current+1) ){
-                     sl[i].classList.remove('active');
-                 }
-             }
-             $(".view").animate({left:"-=450px"});
-             sl[current+1].classList.add('active');
-         } else {
-             current = 1;
-             for (var i=1;i<sl.length;i++){
-                 if((i != current) & (i!=current+1) ){
-                     sl[i].classList.remove('active');
-                 }
-             }
-             $(".view").css({left:"-450px"});
-             sl[current].classList.add('active');
-             sl[current+1].classList.add('active');
-         }
-     },3000)
+     // setInterval(function () {
+     //     if (current < 3){
+     //         current++;
+     //         for (var i=1;i<sl.length;i++){
+     //             if((i != current) & (i!=current+1) ){
+     //                 sl[i].classList.remove('active');
+     //             }
+     //         }
+     //         $(".view").animate({left:"-=450px"});
+     //         sl[current+1].classList.add('active');
+     //     } else {
+     //         current = 1;
+     //         for (var i=1;i<sl.length;i++){
+     //             if((i != current) & (i!=current+1) ){
+     //                 sl[i].classList.remove('active');
+     //             }
+     //         }
+     //         $(".view").css({left:"-450px"});
+     //         sl[current].classList.add('active');
+     //         sl[current+1].classList.add('active');
+     //     }
+     // },3000)
+
+     $(document).ready(function(){
+         $(".collect2 .owl-carousel").owlCarousel({
+             loop:true,
+             margin:50,
+             items: 2,
+             center: false,
+         });
+     });
+     $(document).ready(function(){
+         $(".review .owl-carousel").owlCarousel({
+             loop:true,
+             items: 1,
+             center: true,
+         });
+     });
+
+
 
 </script>
 </body>
