@@ -33,6 +33,7 @@ img{
     display: block;
     border-top: 1px solid rgba(0, 0, 0, 0.2) ;
     margin-left: 17px;
+    padding: 20px 0;
 }
 .name h4{
     font-size: 14px;
@@ -44,7 +45,6 @@ img{
 }
 .content{
     width: 70%;
-    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -79,7 +79,7 @@ h6.title{
 }
 .slide{
     width: 100%;
-    height: 700px;
+    height: 750px;
     position: relative;
     object-fit: cover;
     background-color: white;
@@ -221,42 +221,119 @@ h6.title{
     color: #6E6B66;
     letter-spacing: 0.5px;
 }
+.viewpoint{
+    padding-bottom: 30px;
+    background-color: #F6F6F6
+}
 .collect2{
-    width: 850px;
+    width: 1070px;
     height: 400px;
     margin: 0 auto;
     position: relative;
-}
-.view{
-    width: 2700px;
-    height: 400px;
-    position: absolute;
-    left: -450px;
-    top: 0;
-}
-.rollitem{
-    display: block;
-    box-sizing: border-box;
-    width: 400px;
-    height: 400px;
-    margin-right: 50px;
-    float: left;
-    opacity: 0.5;
 }
 .rollitem img{
     width: 400px;
     height: 250px;
     object-fit: cover;
 }
-.cloned{
+.collect2 .owl-item{
     opacity: 0.5;
 }
-.active{
+.collect2 .owl-stage .active{
     opacity: 1;
 }
-.viewpoint{
-    overflow: hidden;
+.collect2 .owl-carousel{
+    padding: 0 50px;
 }
+.collect2 .owl-carousel .owl-stage-outer{
+    overflow: inherit !important;
+}
+.background{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/imgs/bach/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: height .4s ease;
+    background-attachment: fixed;
+}
+.background:after{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    background: rgba(34, 34, 34, 0.6);
+    top: 0;
+    left: 0;
+}
+.review{
+
+    width: 100%;
+    height: 250px;
+    padding: 40px 220px;
+}
+.comment{
+    color: white;
+    font-family: "Trirong", serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+    background-color: transparent;
+}
+.comment p{
+    padding-left: 70px ;
+}
+.review .owl-carousel .owl-stage{
+    height: 210px;
+}
+.comment:before{
+    content: "“";
+    font-family: "Trirong", serif;
+    font-size: 180px;
+    line-height: 146px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #CBBD9A;
+    text-shadow: 4px 4px 10px #444;
+}
+.contact{
+    background-color: #CBBD9A;
+    color: white;
+    font: inherit;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 40px 0;
+}
+.contact button{
+    background-color: white;
+    color: #baac89 !important;
+    border: 1px solid white;
+    height: 40px;
+    line-height: 42px;
+    transition: all .4s ease;
+    font-size: 12px;
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.2);
+    padding: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 2px;
+    font-weight: 300;
+}
+.contact button:hover{
+    background-color: #baac89;
+    color: white !important;
+}
+
+
+
+
+
 
 
 
