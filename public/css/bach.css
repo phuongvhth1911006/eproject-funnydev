@@ -15,7 +15,7 @@ img{
 }
 .padding-box{
     display: block;
-    padding: 20px;
+    padding: 50px;
 }
 .box_b{
     float: left;
@@ -47,6 +47,7 @@ img{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 15px;
 }
 .content p, .infomation p{
     font-family: "Trirong", serif;
@@ -223,7 +224,8 @@ h6.title{
 }
 .viewpoint{
     padding-bottom: 30px;
-    background-color: #F6F6F6
+    background-color: #F6F6F6;
+    overflow: hidden;
 }
 .collect2{
     width: 1070px;
@@ -250,7 +252,8 @@ h6.title{
 }
 .background{
     width: 100%;
-    height: 250px;
+    height: 200px;
+    padding-top: 10px;
     position: relative;
     overflow: hidden;
     background-image: url("/imgs/bach/bg.jpg");
@@ -264,17 +267,16 @@ h6.title{
     content: " ";
     display: block;
     width: 100%;
-    height: 250px;
+    height: 200px;
     position: absolute;
     background: rgba(34, 34, 34, 0.6);
     top: 0;
     left: 0;
 }
 .review{
-
     width: 100%;
-    height: 250px;
-    padding: 40px 220px;
+    height: 200px;
+    padding: 50px 220px;
 }
 .comment{
     color: white;
@@ -285,7 +287,13 @@ h6.title{
     background-color: transparent;
 }
 .comment p{
+    padding-top: 20px;
     padding-left: 70px ;
+    font-style: italic;
+}
+.comment .author{
+    font-weight: 300;
+    color: #d1d2d3 !important;
 }
 .review .owl-carousel .owl-stage{
     height: 210px;
@@ -301,6 +309,9 @@ h6.title{
     color: #CBBD9A;
     text-shadow: 4px 4px 10px #444;
 }
+.comment .author:before{
+    content: " \2014 \00A0 ";
+}
 .contact{
     background-color: #CBBD9A;
     color: white;
@@ -309,7 +320,7 @@ h6.title{
     line-height: 28px;
     padding: 40px 0;
 }
-.contact button{
+.mybutton{
     background-color: white;
     color: #baac89 !important;
     border: 1px solid white;
@@ -325,9 +336,41 @@ h6.title{
     border-radius: 2px;
     font-weight: 300;
 }
-.contact button:hover{
+.mybutton:hover{
     background-color: #baac89;
     color: white !important;
+}
+.contactus{
+    padding: 10px 0;
+}
+.form{
+    padding-top: 100px;
+}
+.contactus .mybutton{
+    box-shadow: none;
+    border: 1px solid #baac89;
+}
+.contactus .form-group{
+    padding: 10px 0;
+
+}
+.contactus .form-control{
+    background-color: #F6F6F6;
+}
+.contactus span{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: black;
+}
+.contactus p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6E6B66;
+}
+#map{
+    width: 100%;
+    height: 500px;
 }
 
 
