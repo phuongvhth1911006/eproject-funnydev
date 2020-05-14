@@ -20,6 +20,9 @@ h1{
     letter-spacing: 0.5px;
     font-weight: 300;
 }
+.decr1_hoa h3{
+    font-size: 16px;
+}
 .info_hoa{
     width: 100%;
     margin: 40px 0;
