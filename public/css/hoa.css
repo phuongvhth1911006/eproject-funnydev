@@ -7,6 +7,11 @@
 h1{
     color: black;
     padding-bottom: 10px;
+    font-size: 55px;
+}
+.txtretroshadow {
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5), -5px -5px 8px rgba(0,0,0,.7);
+    color: rgb(0, 0, 0);
 }
 .decription_hoa{
     padding: 40px;
@@ -37,12 +42,6 @@ h1{
 .info3{
     padding-left: 5%;
     padding-right: 20%;
-}
-.zoom_y{
-    transition: transform .5s ease;
-}
-.zoom_y:hover{
-    transform: scale(1.1);
 }
 .product{
     margin:20px 0;
