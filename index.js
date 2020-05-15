@@ -30,3 +30,6 @@ app.get('/species',function (req,res) {
 app.get('/animal',function (req,res) {
     res.render('animal');
 });
+app.get('/contact',function (req,res) {
+    res.render('contactus');
+});
