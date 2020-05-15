@@ -346,6 +346,14 @@ img{
     max-width: 600px;
     margin: 0 auto 50px auto;
 }
+.comment_phuong{
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.comment_phuong:before{
+
+}
 #footer{
     background-color: #444;
     height: 390px;
