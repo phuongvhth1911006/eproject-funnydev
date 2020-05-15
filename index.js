@@ -21,10 +21,10 @@ var db = new mssql.Request();
 app.get('/',function (req,res) {
     res.render('home');
 });
-app.get('/parks',function (req,res) {
+app.get('/park',function (req,res) {
     res.render('parks');
 });
-app.get('/species',function (req,res) {
+app.get('/specy',function (req,res) {
     res.render('species');
 });
 app.get('/animal',function (req,res) {
