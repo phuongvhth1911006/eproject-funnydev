@@ -14,7 +14,9 @@
             </div>
         </div>
         <div class="animal text-center">
-            <h1>Amur Leopard</h1>
+            <%for (var i=0;i<animals.length;i++){%>
+            <h1><%= animals[i].AnimalName%>></h1>
+            <%}%>
         </div>
     </div>
     <div class="section">

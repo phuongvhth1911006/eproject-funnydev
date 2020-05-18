@@ -9,9 +9,9 @@ img{
 }
 .descri{
     display: block;
-    width: 400px;
+    width: 100%;
     height: 400px;
-    margin-left: 87px;
+    /*margin-left: 87px;*/
 }
 .padding-box{
     display: block;
@@ -22,6 +22,10 @@ img{
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
+}
+.box_b img{
+    height: 250px;
+    object-fit: cover;
 }
 .card{
     width: 80%;
@@ -36,7 +40,7 @@ img{
     padding: 20px 0;
 }
 .name h4{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -44,7 +48,7 @@ img{
     letter-spacing: 0.5px;
 }
 .content{
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 15px;
@@ -94,7 +98,7 @@ h6.title{
     z-index: 10;
 }
 .infomation{
-    width: 70%;
+    width: 80%;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -104,14 +108,21 @@ h6.title{
     margin-top: 50px;
 }
 .avatar{
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    width: 100%;
+    padding-top: 100%;
     display: inline-block;
+    position: relative;
 }
 .avatar img{
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 .zoom{
     width: 100%;
@@ -153,8 +164,8 @@ h6.title{
     padding-top: 40px;
 }
 .sumary{
-    width: 50%;
-    height: 300px;
+    width: 60%;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     margin-top: 25px;
@@ -228,14 +239,14 @@ h6.title{
     overflow: hidden;
 }
 .collect2{
-    width: 1070px;
-    height: 400px;
+    width: 80%;
+    height: 600px;
     margin: 0 auto;
     position: relative;
 }
 .rollitem img{
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: 400px;
     object-fit: cover;
 }
 .collect2 .owl-item{
@@ -369,6 +380,14 @@ h6.title{
     color: #6E6B66;
 }
 #map{
+    width: 100%;
+    height: 100%;
+}
+.map1{
+    width: 100%;
+    height: 60%;
+}
+.map2{
     width: 100%;
     height: 500px;
 }
