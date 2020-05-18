@@ -2,8 +2,6 @@
 <html lang="en">
 <%- include('head.ejs') -%>
 <body>
-
-    <%- include('header.ejs') -%>
     <div class="section" style="position: relative">
         <div class="slide_header">
             <ul class="section">
@@ -65,30 +63,14 @@
     <div class="section">
         <div class="container-fluid">
             <div class="row home_list_img">
+                <% for (var i=0;i<3;i++){ %>
                 <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
+                    <div style="background-image: url('<%= parks[i].ParkImg1 %>');"><a href="/park/<%= parks[i].ParkID %>"></a></div>
                 </div>
                 <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
+                    <div style="background-image: url('<%= parks[i].ParkImg2 %>');"><a href="/park/<%= parks[i].ParkID %>"></a></div>
                 </div>
-                <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
-                </div>
-                <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
-                </div>
-                <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
-                </div>
-                <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
-                </div>
-                <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
-                </div>
-                <div class="col-xs-6 col-md-2">
-                    <div><a href="/park"></a></div>
-                </div>
+                <% } %>
             </div>
         </div>
     </div>
@@ -98,162 +80,34 @@
             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             <div class="collect2">
                 <div class="owl-carousel">
+                    <% for (var i=0;i<4;i++){%>
                     <div class="rollitem  rollitem_phuong">
                         <div class="box_b">
-                            <img src="imgs/phuong/trip2.jpg"/>
+                            <img src="<%= trips[i].TripImg %>"/>
                             <div class="detail detail_phuong col-md-12">
                                 <div class="col-md-4 text-center">
-                                    <h3>3</h3>
+                                    <h3><%= trips[i].TripDur %></h3>
                                     <h4>Days</h4>
                                 </div>
                                 <div class="col-md-4 text-center">
-                                    <h3>10</h3>
+                                    <h3><%= trips[i].TripSizes %></h3>
                                     <h4>Group Size</h4>
                                 </div>
                                 <div class="col-md-4 text-center">
-                                    <h3>High</h3>
+                                    <h3><%= trips[i].TripDiff %></h3>
                                     <h4>Difficulty</h4>
                                 </div>
                             </div>
                             <div class="name detail_phuong col-md-12">
-                                <h6 class="text-center">CHECKING EXPEDITION</h6>
+                                <h6 class="text-center"><%= trips[i].TripDesc %></h6>
                             </div>
                             <div class="full detail_phuong text-center">
-                                <h5>Cuc Phuong Park</h5>
+                                <h5><%= parks[trips[i].ParkID].ParkName %></h5>
                                 <h4>Viet Nam</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="rollitem  rollitem_phuong">
-                        <div class="box_b">
-                            <img src="imgs/phuong/trip2.jpg"/>
-                            <div class="detail detail_phuong col-md-12">
-                                <div class="col-md-4 text-center">
-                                    <h3>3</h3>
-                                    <h4>Days</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>10</h3>
-                                    <h4>Group Size</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>High</h3>
-                                    <h4>Difficulty</h4>
-                                </div>
-                            </div>
-                            <div class="name detail_phuong col-md-12">
-                                <h6 class="text-center">CHECKING EXPEDITION</h6>
-                            </div>
-                            <div class="full detail_phuong text-center">
-                                <h5>Cuc Phuong Park</h5>
-                                <h4>Viet Nam</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rollitem  rollitem_phuong">
-                        <div class="box_b">
-                            <img src="imgs/phuong/trip2.jpg"/>
-                            <div class="detail detail_phuong col-md-12">
-                                <div class="col-md-4 text-center">
-                                    <h3>3</h3>
-                                    <h4>Days</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>10</h3>
-                                    <h4>Group Size</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>High</h3>
-                                    <h4>Difficulty</h4>
-                                </div>
-                            </div>
-                            <div class="name detail_phuong col-md-12">
-                                <h6 class="text-center">CHECKING EXPEDITION</h6>
-                            </div>
-                            <div class="full detail_phuong text-center">
-                                <h5>Cuc Phuong Park</h5>
-                                <h4>Viet Nam</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rollitem  rollitem_phuong">
-                        <div class="box_b">
-                            <img src="imgs/phuong/trip2.jpg"/>
-                            <div class="detail detail_phuong col-md-12">
-                                <div class="col-md-4 text-center">
-                                    <h3>3</h3>
-                                    <h4>Days</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>10</h3>
-                                    <h4>Group Size</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>High</h3>
-                                    <h4>Difficulty</h4>
-                                </div>
-                            </div>
-                            <div class="name detail_phuong col-md-12">
-                                <h6 class="text-center">CHECKING EXPEDITION</h6>
-                            </div>
-                            <div class="full detail_phuong text-center">
-                                <h5>Cuc Phuong Park</h5>
-                                <h4>Viet Nam</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rollitem  rollitem_phuong">
-                        <div class="box_b">
-                            <img src="imgs/phuong/trip2.jpg"/>
-                            <div class="detail detail_phuong col-md-12">
-                                <div class="col-md-4 text-center">
-                                    <h3>3</h3>
-                                    <h4>Days</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>10</h3>
-                                    <h4>Group Size</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>High</h3>
-                                    <h4>Difficulty</h4>
-                                </div>
-                            </div>
-                            <div class="name detail_phuong col-md-12">
-                                <h6 class="text-center">CHECKING EXPEDITION</h6>
-                            </div>
-                            <div class="full detail_phuong text-center">
-                                <h5>Cuc Phuong Park</h5>
-                                <h4>Viet Nam</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rollitem  rollitem_phuong">
-                        <div class="box_b">
-                            <img src="imgs/phuong/trip2.jpg"/>
-                            <div class="detail detail_phuong col-md-12">
-                                <div class="col-md-4 text-center">
-                                    <h3>3</h3>
-                                    <h4>Days</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>10</h3>
-                                    <h4>Group Size</h4>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <h3>High</h3>
-                                    <h4>Difficulty</h4>
-                                </div>
-                            </div>
-                            <div class="name detail_phuong col-md-12">
-                                <h6 class="text-center">CHECKING EXPEDITION</h6>
-                            </div>
-                            <div class="full detail_phuong text-center">
-                                <h5>Cuc Phuong Park</h5>
-                                <h4>Viet Nam</h4>
-                            </div>
-                        </div>
-                    </div>
+                    <% } %>
                 </div>
             </div>
 
@@ -264,11 +118,12 @@
             <div class="review">
                 <div class="owl-carousel">
                     <div class="comment comment_phuong">
-                        <p class="text-center">A great place to visit. Lots of green, easy to relax. Most paths are marked so that you can’t get lost in the jungle.
+                        <p class="text-center">A great place to visit. Lots of green, easy to relax.
                             I would definitely recommend a visit to all Cat Ba visitors.</p>
                     </div>
                     <div class="comment comment_phuong">
-                        <p class="text-center">Amazing surroundings, great atmosphere, sometimes the trekking might be difficult but its with it.</p>
+                        <p class="text-center">Amazing surroundings, great atmosphere, sometimes the trekking might be
+                            difficult but its with it.</p>
                     </div>
                     <div class="comment comment_phuong">
                         <p class="text-center">Stunning view and only a short walk up to the viewpoint.</p>
