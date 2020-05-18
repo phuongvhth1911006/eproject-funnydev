@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('head.ejs') -%>
+<%- include('head_ID.ejs') -%>
 <body>
 <%- include('header.ejs') -%>
 <% for (var i=0;i< parks.length;i++){ %>
@@ -137,28 +137,19 @@
                 <div class="collect2">
                     <div class="owl-carousel">
                         <% for (var i=0;i< animals.length;i++){ %>
-                        <div class="rollitem">
-                            <div class="box_b">
-                                <img src="<%= animals[i].AnimalImg1%>"/>
-                                <div class="detail col-md-12">
-                                    <div class="col-md-6 text-center">
-                                        <h3><%= animals[i].SpecyID%></h3>
-                                        <h4>Type</h4>
+                        <a href="/animal/<%= animals[i].AnimalID %>">
+                            <div class="rollitem">
+                                <div class="box_b">
+                                    <img src="<%= animals[i].AnimalImg1%>"/>
+                                    <div class="name col-md-12">
+                                        <h4 class="text-center"><%= animals[i].AnimalName%></h4>
                                     </div>
-                                    <div class="col-md-6 text-center">
-                                        <h3><%= animals[i].AnimalLife%></h3>
-                                        <h4>Life Span</h4>
-                                    </div>
-                                </div>
-                                <div class="name col-md-12">
-                                    <h4 class="text-center"><%= animals[i].AnimalName%></h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         <% } %>
                     </div>
                 </div>
-
             </div>
         </div>
     <div class="section contact text-center">
