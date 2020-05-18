@@ -2,46 +2,123 @@
     float: left;
     width: 100%;
     margin: 0 auto;
+    font-family: "Trirong", serif;
 }
-.container_hoa{
-    float: left;
-    width: 100%;
+h1{
+    color: black;
+    padding-bottom: 10px;
+    font-size: 55px;
+}
+.txtretroshadow {
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5), -5px -5px 8px rgba(0,0,0,.7);
+    color: rgb(0, 0, 0);
 }
 .decription_hoa{
-    text-align: center;
-    padding: 30px;
+    padding: 40px;
     font-size:20px ;
-    font-family: 'Open Sans', sans-serif;
 }
-.product_hoa{
-    float: left;
+.decr1_hoa {
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
 }
-.image1{
-    padding: 20px;
-    width: 50%;
-    float: left;
+.decr1_hoa h3{
+    font-size: 17px;
+}
+.info_hoa{
+    width: 100%;
+    margin: 40px 0;
+    padding: 30px 0 ;
+    background-color: rgba(238, 238, 238, 0.68);
+    font-size: 16px;
+    line-height: 24px;
+}
+.info1{
+    padding-left: 20%;
+    padding-right: 5%;
+}
+.info3{
+    padding-left: 5%;
+    padding-right: 20%;
+}
+.product{
+    margin:20px 0;
+    height: 164px;
+}
+.product1 img{
+    position: relative;
+    overflow: hidden;
+    transition: transform .4s ease;
+}
+.product .product1 .name_x{
+    position:absolute;
+    bottom:0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    color:black;
     text-align: center;
-}
-.avt_hoa{
-    background-image:url("public/imgs/hoa/hinh-nen-con-ho-5.jpg");
-    background-position :center;
-    background-size:cover;
-    height: 700px;
-    color: yellow;
-    font-size: 30px;
-
-    padding-top: 18%;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
 }
 
-.decr1_hoa{
+.product1 img:hover{
+    filter:brightness(50%);
+}
+.info_hoa span{
+    font-size: 40px;
+}
+.tour{
+    font-size: 16px;
+    padding: 20px 0;
+    background-color: rgba(238, 238, 238, 0.68);
+    margin: 40px 0 0 0;
+}
+.box{
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: white;
+    margin-left: -10px;
+    margin-right:20px;
+}
+.box1{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.box1 :hover{
+    filter:brightness(50%);
+}
+.box2{
+    padding:20px;
+
+}
+.box h6{
+    border: 1px solid red;
+    color: red;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 4px;
+    border-radius: 4px;
+}
+.box h6:hover{
+    background-color: red !important;
+    color:#ffffff !important;
+}
+.box h4{
     color: orange;
-    font-size: 30px;
-
 }
-.decr2_hoa{
-    text-align: left;
+.tour h5 {
+    font-size: 50px;
+    color: orange;
+    font-weight: 300;
 }
-img{
-    max-width: 100%;
+.info4{
+    padding:20px 0 50px 0;
 }

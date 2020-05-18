@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('head.ejs') -%>
+<body>
+<%- include('header.ejs') -%>
+<section class="section">
+    <div class="section slide">
+        <div class="section" style="position: relative">
+            <div class="slide_header">
+                <ul class="section">
+                    <li class="banner1" style="background-image: url('imgs/bach/leopard1.jpg')"></li>
+                    <li class="banner2" style="background-image: url('/imgs/bach/leopard2.jpg')"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="animal text-center">
+            <h1>Amur Leopard</h1>
+        </div>
+    </div>
+    <div class="section">
+        <div class="content">
+            <p>Slowly stalking down the snowy hillside, the Amur leopard watches its prey through the trees. In the clearing below, a sika deer munches on tree bark,
+                one of its few remaining food sources during the cold Russian winter. The leopard crouches, its body so low to the ground that its belly fur
+                brushes the snow. Suddenly it bounds and springs forward, tackling the deer from 10 feet away. It’s dinnertime.</p>
+            <p>BY SCOTT ELDER</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="sumary">
+            <div class="row">
+                <div class="col-md-8 fastfact">
+                    <p><span class="theard">Type: </span>Mammals</p>
+                    <p><span class="theard">DIET: </span>Carnivore</p>
+                    <p><span class="theard">AVERAGE LIFE SPAN IN THE WILD: </span>10 to 15 years</p>
+                    <p><span class="theard">SIZE: </span>6 to 7 feet</p>
+                    <p><span class="theard">WEIGHT: </span>70 to 105 pounds</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="avatar">
+                        <img src="/imgs/bach/leopard3.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="infomation">
+            <div class="row line">
+                <div class="col-md-6">
+                    <h2>COOL CATS</h2>
+                    <p>Most people think of leopards prowling the savannas of Africa, but these spotted predators thrive in many different countries and habitats.
+                        Amur leopards can be found in the mountainous forests of eastern Russia and northern China. Named after the Amur River,
+                        a body of water that runs along the border of both countries, these cats are well adapted to this harsh environment.
+                        Their soft, dense fur keeps them warm in the bitter cold, and their large paws work like snowshoes to let them walk on snow without sinking.<br>
+                        Amur leopards weigh about 80 pounds, some 30 pounds less than the average African leopard.
+                        But these cats can still take down prey up to three times their size. They prefer to feast on deer and boar,
+                        but will eat rabbits and mice if they can’t find bigger game. Scientists sometimes call Amur leopards the “silent killer” since they’re so good
+                        at sneaking up on prey.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="frame">
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/dXAmEDFFero" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="infomation">
+            <div class="row line">
+                <div class="col-md-6">
+                    <h2>BOUNCING BACK</h2>
+                    <p>Loss of habitat and poaching have made Amur leopards one of the rarest wild cats on Earth—and the world’s rarest leopard.
+                        Thanks in part to a newly established national park along the Russian and Chinese border, however, Amur leopards are clawing their way back.
+                        Since the 647,400-acre refuge dubbed Land of the Leopard National Park was created in 2012, the Amur leopard population has jumped to about
+                        80 individuals in 2018, up from only about 30 in the early 2000s. Officials believe that effective law enforcement in the park will help keep
+                        the population climbing. So hopefully, even more of these leopards will be spotted soon.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="frame">
+                        <button type="button" onclick="prev()"><i class="fas fa-chevron-left"></i></button>
+                        <button type="button" onclick="next()"><i class="fas fa-chevron-right"></i></button>
+                        <div id="collect1">
+                            <div class="image_b">
+                                <img src="/imgs/bach/leopard1.jpg"/>
+                            </div>
+                            <div class="image_b">
+                                <img src="/imgs/bach/leopard2.jpg"/>
+                            </div>
+                            <div class="image_b">
+                                <img src="/imgs/bach/leopard3.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="line center">
+            <h2 class="text-center">More Animals</h2>
+            <div class="card">
+                <div class="col-md-3">
+                    <a href="#">
+                        <div class="box_b zoom">
+                            <img src="/imgs/bach/leopard1.jpg"/>
+                        </div>
+                        <p class="text-center">Zebra</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <div class="box_b zoom">
+                            <img src="/imgs/bach/tiger.jpg"/>
+                        </div>
+                        <p class="text-center">Zebra</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <div class="box_b zoom">
+                            <img src="/imgs/bach/dog.jpg"/>
+                        </div>
+                        <p class="text-center">Zebra</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <div class="box_b zoom">
+                            <img src="/imgs/bach/catba7.jpg"/>
+                        </div>
+                        <p class="text-center">Zebra</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<%- include('footer.ejs') -%>
+<script src="/jquery/jquery.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/nivo-slider/jquery.nivo.slider.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var count =1;
+    var p =  document.getElementById("collect1");
+    var sl=document.getElementsByClassName("image_b");
+    var pixel=0;
+    function slideback() {
+        var back = setInterval(() => {
+            if (pixel >0){
+                pixel -=20;
+                p.style.left = -pixel+"px";
+            } else {
+                count = 1;
+                clearInterval(back);
+            }
+        },0.01);
+    }
+    function slidetop(){
+        var top = setInterval(() => {
+            if (pixel < 500*(sl.length-1)){
+                pixel +=20;
+                p.style.left = -pixel+"px";
+            } else {
+                count = sl.length;
+                clearInterval(top);
+            }
+        },0.01);
+    }
+    function next() {
+        var slide = setInterval(show,1);
+        function show() {
+            if (count == sl.length){
+                slideback();
+                clearInterval(slide);
+            } else {
+                if (pixel <(500*count)){
+                    pixel+=5;
+                    p.style.left = -pixel+"px";
+                } else {
+                    count ++;
+                    clearInterval(slide);
+                    console.log(count);
+                    console.log(pixel);
+                }
+            }
+        }
+    }
+    function prev(){
+        var slide = setInterval(show,1);
+        function show() {
+            if (count == 1){
+                slidetop();
+                clearInterval(slide);
+            } else {
+                if (pixel >(500*(count-2))){
+                    pixel-=5;
+                    p.style.left = -pixel+"px";
+                } else {
+                    count --;
+                    clearInterval(slide);
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

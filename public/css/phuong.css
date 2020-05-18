@@ -1,6 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .section{
     float: left;
     width: 100%;
+}
+.container_p{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 50%;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -11,6 +20,16 @@ a{
 img{
     max-width: 100%;
 }
+.bar_item{
+    text-align: right;
+    float:right;
+    padding: 0 20px;
+}
+
+.bar_header div{
+    padding-left: 0;
+    padding-right: 0;
+}
 .full{
     float: left;
     width: 100%;
@@ -19,13 +38,13 @@ img{
 #logo .full > a{
     float:left;
     width: 100%;
-    padding: 12px 0;
+    padding: 18px 0;
 }
 .bar_item .full > a{
     float:left;
     width: 100%;
-    padding: 25px 0;
-    color: #2F2911;
+    padding: 27px 15px;
+    color: #ffffff;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.5px;
@@ -33,11 +52,12 @@ img{
     transition: color 0.4s;
 }
 .dd{
-    border-top: 1px solid #CBBD9A;
+    text-align: left;
+    border-top: 3px solid #f1d899;
     position: absolute;
     top:72px;
     left:0;
-    width: 100%;
+    width: 200%;
     padding-top: 10px;
     display: none;
     transition: display 1s;
@@ -51,51 +71,295 @@ img{
 .dd ul li{
     float:left;
     width: 100%;
-    height: 30px;
+    height: 40px;
 }
 .dd ul li a{
     float:left;
     width: 100%;
-    padding: 5px 0px 5px 15px;
+    padding: 7px 0px 7px 15px;
     transition: 0.4s;
 }
-.bar_enter .full > a{
-    color: #CBBD9A;
+.bar_item:hover .dd{
+    display: block !important;
 }
-.bar_item .full  a{
+.bar_item:hover .full >a{
+    color: #f1d899 !important;
+}
+.bar_item .full a{
     text-decoration: none;
 }
-.bar_enter .full .dd{
-    display: block;
-}
-.item_hover > a{
+.dd ul li:hover a{
     padding-left: 30px !important;
-    color: #CBBD9A;
+    color: #f1d899 !important;
 }
-#slide-banner{
-    height: 700px;
-    background-image: url("../imgs/phuong/banner_home3.jpg");
+.slide_header{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+.slide_header > ul{
+    position: relative;
+}
+.banner1{
+    left:0;
+}
+.banner2{
+    left:100%;
+}
+.slide_header ul >li{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 750px;
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
+    top:0;
+}
+.bg_fade{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 2;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(34, 34, 34, 0.35);
+    background-position: center;
+}
+#nav_bar{
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color .5s ease-out;
+    box-shadow: 0px 2px 9px -2px rgba(156, 156, 156, 0.5);
+}
+.text_header{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    top: 200px;
+    left:0;
 }
 .text{
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    top:30%;
-    left:0;
     color: #ffffff;
 }
 .text h1{
     font-size: 55px;
+    font-weight: 600;
+    color: #ffffff;
 }
 .text p{
     font-size: 16px;
-    padding: 10px;
+    padding: 15px 0 25px 0;
+    font-weight: 300;
 }
 .text .btn_info{
     background-color: #CBBD9A ;
     border: none;
     color: #ffffff;
-    padding: 10px 25px;
+    padding: 10px 20px;
+    transition: 0.4s;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 30px 0px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+.btn.btn-default.btn_info:hover{
+    background-color: #ffffff !important;
+    color: #f1d899 !important;
+}
+.btn_enter{
+
+}
+.home_abus >div{
+    padding: 10px 0;
+}
+.home_abus h1{
+    color: rgb(47, 41, 17);
+    letter-spacing: 0px;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 400;
+    text-shadow: rgb(136, 139, 141) 2px 2px 40px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 35px 0 0 0;
+    margin: 0;
+}
+.home_abus p{
+    font-family: 'Trirong', serif;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #6E6B66;
+}
+.home_abus_desc{
+    padding-top: 35px;
+}
+.home_abus .col-xs-12{
+    padding: 0px;
+}
+.home_abus .row{
+    margin-right: -30px;
+    margin-left: -30px;
+}
+.home_abus .full{
+    padding: 0 30px 0px 30px;
+}
+.home_abus .full img{
+    width: 100%;
+    height: calc((50vw - 30px*3 - 30px - 30px)/3);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 6px 30px 0;
+}
+.home_abus .full h4,.home_advantage h4{
+    padding-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #2F2911;
+    font-family: 'Trirong', serif;
+    margin:0;
+}
+.home_abus .full p{
+    font-size: 16px;
+    font-style: italic;
+}
+.home_abus_bach{
+    animation: from_left 1.4s ease-out both;
+}
+@keyframes from_left {
+    from {left: calc(calc(-100%  + 1230px/2) - 410px); opacity: 0.1}
+    to {left: 0; opacity: 1}
+}
+.home_abus_phuong{
+    opacity: 1 !important;
+}
+.home_abus_hoa{
+    animation: from_right 1.4s ease-out both;
+}
+@keyframes from_right {
+    from {right: calc(calc(-100%  + 1230px/2) - 410px); opacity: 0.1}
+    to {right: 0; opacity: 1}
+}
+.home_advantage{
+    padding: 50px 0;
+}
+.home_advantage h4{
+    padding: 15px 0 10px 0;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+.home_advantage i{
+    width: 100%;
+    font-size: 40px;
+}
+.home_advantage i:hover{
+    color: #CBBD9A;
+    transition: color .4s ease;
+}
+.home_advantage p{
+    font-family: "Trirong", serif;
+    color: #6E6B66;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+.home_list_img{
+    padding: 30px 15px;
+}
+.home_list_img .col-md-2{
+    width: calc(100%/8);
+    padding: 0 15px;
+}
+.home_list_img .col-md-2 >div{
+    background-image: url('../imgs/phuong/trip5-small.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform .4s ease, -webkit-transform .4s ease;
+    height: calc((100vw - 30px*8 - 30px)/8);
+    background-color: transparent;
+}
+.home_list_img .col-md-2 >div a{
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+.detail_phuong{
+    margin-bottom: 15px;
+}
+.detail_phuong .col-md-4 h3{
+    font-size: 21px;
+    line-height: 24px;
+    color: #CBBD9A;
+    letter-spacing: 0.5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.detail_phuong .col-md-4 h4, .detail_phuong >h4{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Trirong", serif;
+    color: #6E6B66;
+    margin: 0;
+}
+.detail_phuong >h6{
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2F2911;
+    letter-spacing: 0.5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.detail_phuong >h5{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Trirong", serif;
+    color: #2F2911;
+    margin: 0;
+}
+.rollitem_phuong img{
+    height: 307px;
+}
+.name.detail_phuong{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+}
+.line_phuong >h2{
+    color: #2F2911;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 500;
+    text-shadow: 2px 2px 40px #888b8d;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+}
+.line_phuong >p{
+    color: #6E6B66;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+.comment_phuong{
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.comment_phuong:before{
+
+}
+#footer{
+    background-color: #444;
+    height: 390px;
 }
