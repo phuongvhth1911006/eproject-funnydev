@@ -42,11 +42,12 @@ app.get('/specy',function (req,res) {
 });
 app.get('/animal/:AnimalID',function (req,res) {
     var ID = req.params.AnimalID;
-    var sql_text = "Select * From FD_Animals ";
+    var sql_text = "Select * From FD_Animals";
     db.query(sql_text,function(err,rows){
         res.render("animal",{
-            animals: rows.recordsets[0],
-        });
+            animals: rows.recordset,
+            id: ID-1
+        })
     });
 });
 app.get('/contact',function (req,res) {

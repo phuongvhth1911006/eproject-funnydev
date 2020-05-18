@@ -8,23 +8,18 @@
         <div class="section" style="position: relative">
             <div class="slide_header">
                 <ul class="section">
-                    <li class="banner1" style="background-image: url('imgs/bach/leopard1.jpg')"></li>
-                    <li class="banner2" style="background-image: url('/imgs/bach/leopard2.jpg')"></li>
+                    <li class="banner1" style="background-image: url('<%= animals[id].AnimalImg1 %>')"></li>
+                    <li class="banner2" style="background-image: url('<%= animals[id].AnimalImg2 %>')"></li>
                 </ul>
             </div>
         </div>
         <div class="animal text-center">
-            <%for (var i=0;i<animals.length;i++){%>
-            <h1><%= animals[i].AnimalName%>></h1>
-            <%}%>
+            <h1><%= animals[id].AnimalName%>></h1>
         </div>
     </div>
     <div class="section">
         <div class="content">
-            <p>Slowly stalking down the snowy hillside, the Amur leopard watches its prey through the trees. In the clearing below, a sika deer munches on tree bark,
-                one of its few remaining food sources during the cold Russian winter. The leopard crouches, its body so low to the ground that its belly fur
-                brushes the snow. Suddenly it bounds and springs forward, tackling the deer from 10 feet away. It’s dinnertime.</p>
-            <p>BY SCOTT ELDER</p>
+            <p><%= animals[id].AnimalDesc %> </p>
         </div>
     </div>
     <div class="section">
@@ -32,14 +27,14 @@
             <div class="row">
                 <div class="col-md-8 fastfact">
                     <p><span class="theard">Type: </span>Mammals</p>
-                    <p><span class="theard">DIET: </span>Carnivore</p>
-                    <p><span class="theard">AVERAGE LIFE SPAN IN THE WILD: </span>10 to 15 years</p>
-                    <p><span class="theard">SIZE: </span>6 to 7 feet</p>
-                    <p><span class="theard">WEIGHT: </span>70 to 105 pounds</p>
+                    <p><span class="theard">DIET: </span><%= animals[id].AnimalDiet %></p>
+                    <p><span class="theard">AVERAGE LIFE SPAN IN THE WILD: </span><%= animals[id].AnimalLife %></p>
+                    <p><span class="theard">SIZE: </span><%= animals[id].AnimalSize %></p>
+                    <p><span class="theard">WEIGHT: </span><%= animals[id].AnimalWeight %></p>
                 </div>
                 <div class="col-md-4">
                     <div class="avatar">
-                        <img src="/imgs/bach/leopard3.jpg"/>
+                        <img src="<%= animals[id].AnimalImg1 %>"/>
                     </div>
                 </div>
             </div>
@@ -49,19 +44,12 @@
         <div class="infomation">
             <div class="row line">
                 <div class="col-md-6">
-                    <h2>COOL CATS</h2>
-                    <p>Most people think of leopards prowling the savannas of Africa, but these spotted predators thrive in many different countries and habitats.
-                        Amur leopards can be found in the mountainous forests of eastern Russia and northern China. Named after the Amur River,
-                        a body of water that runs along the border of both countries, these cats are well adapted to this harsh environment.
-                        Their soft, dense fur keeps them warm in the bitter cold, and their large paws work like snowshoes to let them walk on snow without sinking.<br>
-                        Amur leopards weigh about 80 pounds, some 30 pounds less than the average African leopard.
-                        But these cats can still take down prey up to three times their size. They prefer to feast on deer and boar,
-                        but will eat rabbits and mice if they can’t find bigger game. Scientists sometimes call Amur leopards the “silent killer” since they’re so good
-                        at sneaking up on prey.</p>
+                    <h2><%= animals[id].Title1 %></h2>
+                    <p><%= animals[id].AnimalFact1 %></p>
                 </div>
                 <div class="col-md-6">
                     <div class="frame">
-                        <iframe width="500" height="315" src="https://www.youtube.com/embed/dXAmEDFFero" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/<%= animals[id].AnimalVideo %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -71,12 +59,8 @@
         <div class="infomation">
             <div class="row line">
                 <div class="col-md-6">
-                    <h2>BOUNCING BACK</h2>
-                    <p>Loss of habitat and poaching have made Amur leopards one of the rarest wild cats on Earth—and the world’s rarest leopard.
-                        Thanks in part to a newly established national park along the Russian and Chinese border, however, Amur leopards are clawing their way back.
-                        Since the 647,400-acre refuge dubbed Land of the Leopard National Park was created in 2012, the Amur leopard population has jumped to about
-                        80 individuals in 2018, up from only about 30 in the early 2000s. Officials believe that effective law enforcement in the park will help keep
-                        the population climbing. So hopefully, even more of these leopards will be spotted soon.</p>
+                    <h2><%= animals[id].Title2 %></h2>
+                    <p><%= animals[id].AnimalFact2 %></p>
                 </div>
                 <div class="col-md-6">
                     <div class="frame">
@@ -84,13 +68,13 @@
                         <button type="button" onclick="next()"><i class="fas fa-chevron-right"></i></button>
                         <div id="collect1">
                             <div class="image_b">
-                                <img src="/imgs/bach/leopard1.jpg"/>
+                                <img src="<%= animals[id].AnimalImg2 %>"/>
                             </div>
                             <div class="image_b">
-                                <img src="/imgs/bach/leopard2.jpg"/>
+                                <img src="<%= animals[id].AnimalImg3 %>"/>
                             </div>
                             <div class="image_b">
-                                <img src="/imgs/bach/leopard3.jpg"/>
+                                <img src="<%= animals[id].AnimalImg4 %>"/>
                             </div>
                         </div>
                     </div>
@@ -102,38 +86,16 @@
         <div class="line center">
             <h2 class="text-center">More Animals</h2>
             <div class="card">
+                <% for (var i=0;i<4;i++){%>
                 <div class="col-md-3">
                     <a href="#">
                         <div class="box_b zoom">
-                            <img src="/imgs/bach/leopard1.jpg"/>
+                            <img src="<%= animals[i].AnimalImg1 %>"/>
                         </div>
-                        <p class="text-center">Zebra</p>
+                        <p class="text-center"><%= animals[i].AnimalName %></p>
                     </a>
                 </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <div class="box_b zoom">
-                            <img src="/imgs/bach/tiger.jpg"/>
-                        </div>
-                        <p class="text-center">Zebra</p>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <div class="box_b zoom">
-                            <img src="/imgs/bach/dog.jpg"/>
-                        </div>
-                        <p class="text-center">Zebra</p>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#">
-                        <div class="box_b zoom">
-                            <img src="/imgs/bach/catba7.jpg"/>
-                        </div>
-                        <p class="text-center">Zebra</p>
-                    </a>
-                </div>
+                <%}%>
             </div>
         </div>
 
