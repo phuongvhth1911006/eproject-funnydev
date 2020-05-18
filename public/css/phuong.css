@@ -286,6 +286,11 @@ img{
     height: calc((100vw - 30px*8 - 30px)/8);
     background-color: transparent;
 }
+.home_list_img .col-md-2 >div a{
+    float:left;
+    width: 100%;
+    height: 100%;
+}
 .detail_phuong{
     margin-bottom: 15px;
 }

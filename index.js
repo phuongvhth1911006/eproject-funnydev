@@ -21,15 +21,44 @@ var db = new mssql.Request();
 app.get('/',function (req,res) {
     res.render('home');
 });
-app.get('/parks',function (req,res) {
-    res.render('parks');
+app.get('/park/:ParkID',function (req,res) {
+    var ID = req.params.ParkID;
+    var sql_text = "Select * From FD_Parks Where ParkID="+ID+";";
+    sql_text += "Select * From FD_Trips Where ParkID="+ID+";";
+    sql_text += "Select * From FD_Animals Where AnimalID In (Select AnimalID From FD_AnimalPark Where ParkID="+ID+");";
+    sql_text += "Select SpecyName From FD_Species Where SpecyID In (Select SpecyID From FD_Animals Where AnimalID In (Select AnimalID From FD_AnimalPark Where ParkID="+ID+"));";
+    db.query(sql_text,function(err,rows){
+        res.render("parks",{
+            parks: rows.recordsets[0],
+            trips: rows.recordsets[1],
+            animals: rows.recordsets[2],
+            species: rows.recordsets[3],
+        });
+        }
+    )
 });
-app.get('/species',function (req,res) {
+app.get('/specy',function (req,res) {
     res.render('species');
 });
-app.get('/animal',function (req,res) {
-    res.render('animal');
+app.get('/animal/:AnimalID',function (req,res) {
+    var ID = req.params.AnimalID;
+    var sql_text = "Select * From FD_Animals";
+    db.query(sql_text,function(err,rows){
+        res.render("animal",{
+            animals: rows.recordset,
+            id: ID-1
+        })
+    });
 });
 app.get('/contact',function (req,res) {
     res.render('contactus');
+});
+
+app.get('/test',function (req,res) {
+    var sql_text = "Select * From FD_Animals ";
+    db.query(sql_text,function(err,rows){
+        res.send(
+            rows.recordsets[0]
+        );
+    });
 });
