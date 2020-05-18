@@ -331,6 +331,10 @@ h6.title{
     line-height: 28px;
     padding: 40px 0;
 }
+.contact a{
+    text-decoration: none;
+    color: white;
+}
 .mybutton{
     background-color: white;
     color: #baac89 !important;

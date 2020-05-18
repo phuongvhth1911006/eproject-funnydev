@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('head_ID.ejs') -%>
+<%- include('head.ejs') -%>
 <body>
 <%- include('header.ejs') -%>
 <% for (var i=0;i< parks.length;i++){ %>
@@ -154,7 +154,7 @@
         </div>
     <div class="section contact text-center">
         <p>Would you like more info about this park?</p>
-        <p>Call us at +40 45615654 or</p>
+        <p>Call us at <span><a href="tel:+40 45615654">+40 45615654</a></span> or</p>
         <button class="mybutton">Contact Us</button>
     </div>
 </section>
