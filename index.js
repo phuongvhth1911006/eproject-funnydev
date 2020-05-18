@@ -19,10 +19,10 @@ mssql.connect(config,function (err) {
 var db = new mssql.Request();
 //routing -- định tuyến
 app.get('/',function (req,res) {
-    var sql_text = "Select ParkName,ParkImg2 From FD_Parks;";
+    var sql_text = "Select ParkID,ParkName,ParkImg1,ParkImg2 From FD_Parks;";
     sql_text += "Select * From FD_Trips";
     db.query(sql_text,function(err,rows){
-        res.render("home",{
+        res.render('home',{
             parks: rows.recordsets[0],
             trips: rows.recordsets[1]
         });
