@@ -274,7 +274,6 @@ img{
     padding: 30px 15px;
 }
 .home_list_img .col-md-2{
-    width: calc(100%/8);
     padding: 0 15px;
 }
 .home_list_img .col-md-2 >div{
@@ -282,7 +281,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     transition: transform .4s ease, -webkit-transform .4s ease;
-    height: calc((100vw - 30px*8 - 30px)/8);
+    height: calc((100vw - 30px*6 - 30px)/6);
     background-color: transparent;
 }
 .home_list_img .col-md-2 >div a{
