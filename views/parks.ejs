@@ -155,7 +155,7 @@
     <div class="section contact text-center">
         <p>Would you like more info about this park?</p>
         <p>Call us at <span><a href="tel:+40 45615654">+40 45615654</a></span> or</p>
-        <button class="mybutton">Contact Us</button>
+        <a href="/contact" class="mybutton">Contact Us</a>
     </div>
 </section>
 <% } %>
@@ -165,31 +165,6 @@
 <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaj0mHlR-keu-9hsR6d-gB0L9BclG04rk&callback=initMap" async defer></script>
 <script type="text/javascript">
-     var current = 1;
-     var sl = $(".rollitem");
-     // setInterval(function () {
-     //     if (current < 3){
-     //         current++;
-     //         for (var i=1;i<sl.length;i++){
-     //             if((i != current) & (i!=current+1) ){
-     //                 sl[i].classList.remove('active');
-     //             }
-     //         }
-     //         $(".view").animate({left:"-=450px"});
-     //         sl[current+1].classList.add('active');
-     //     } else {
-     //         current = 1;
-     //         for (var i=1;i<sl.length;i++){
-     //             if((i != current) & (i!=current+1) ){
-     //                 sl[i].classList.remove('active');
-     //             }
-     //         }
-     //         $(".view").css({left:"-450px"});
-     //         sl[current].classList.add('active');
-     //         sl[current+1].classList.add('active');
-     //     }
-     // },3000)
-
      $(document).ready(function(){
          $(".collect2 .owl-carousel").owlCarousel({
              loop:true,
