@@ -43,8 +43,16 @@ app.get('/park/:ParkID',function (req,res) {
         });
     });
 });
-app.get('/specy',function (req,res) {
-    res.render('species');
+app.get('/specy/:SpecyID',function (req,res) {
+    var ID = req.params.SpecyID;
+    var sql_text = "Select * From FD_Species WHERE SpecyID = "+ID+";";
+    sql_text += "Select * From FD_Animals WHERE SpecyID = "+ID+";";
+    db.query(sql_text,function(err,rows){
+        res.render("species",{
+            animals: rows.recordsets[0],
+            species: rows.recordsets[1]
+        });
+    });
 });
 app.get('/animal/:AnimalID',function (req,res) {
     var ID = req.params.AnimalID;

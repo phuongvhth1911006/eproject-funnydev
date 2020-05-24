@@ -6,8 +6,8 @@
     <div class="section" style="position: relative">
         <div class="slide_header">
             <ul class="section">
-                <li class="banner1 " style="background-image: url('imgs/hoa/banner2.jpg')"></li>
-                <li class="banner2 " style="background-image: url('imgs/hoa/banner1.jpg')"></li>
+                <li class="banner1 " style="background-image: url('<%= "http://eproject-funnydev.herokuapp.com/" + species.SpeciesImg1 %>')"></li>
+                <li class="banner2 " style="background-image: url('<%= "http://eproject-funnydev.herokuapp.com/" + species.SpeciesImg2 %>')"></li>
             </ul>
         </div>
     </div>
@@ -15,21 +15,16 @@
 <section class="section_hoa">
     <div class="section_hoa decription_hoa col-xs-12">
         <div class="decr1_hoa col-xs-12 text-center ">
-            <h1 class='txtretroshadow'>MAMMALS</h1>
+            <h1 class='txtretroshadow'><%= species.SpecyName%></h1>
             <div class="decr1_hoa col-xs-12 text-center ">
-                <p><i><h3>They feed their young with milk and have a more well-developed brain than other types of animals.</h3></i></p>
+                <p><i><h3><%= species.SpecySum%></h3></i></p>
             </div>
         </div>
     </div>
     <div class=" decr1_hoa col-xs-12 text-center">
         <div class="col-xs-1"></div>
         <div class="col-xs-10">
-            <p>Mammalia: is an endothermic branch of amniotic fluid distinguished from
-                birds by the  appearance of cilia, three middle ear bones, mammary gland,
-                and new cortex . The brain regulates body temperature and circulatory system,
-                including a four-chambered heart.The Zoo class includes the largest living animals
-                , as well as the smartest animals like elephants,
-                some primates and whales.</p>
+            <p><%= species.SpecyDesc%></p>
         </div>
         <div class="col-xs-1"></div>
     </div>
@@ -37,45 +32,27 @@
         <div class="info1  col-xs-5 text-center">
             <span><i class="fab fa-airbnb"></i></span>
             <h4><b>Biological systems</b></h4>
-            <p>The majority of mammals have seven cervical vertebrae , including bats, giraffes, whales and humans. The exceptions
-                are the manatee and the two-toed sloth, which have just six, and the three-toed sloth which has nine
-                cervical vertebrae. All mammalian brains possess a neocortex.</p>
+            <p><%= species.SpecyBioSys%></p>
         </div>
         <div class="info2  col-xs-2  text-center">
             <span><i class="fab fa-opencart"></i></span>
             <h4><b>Origins</b></h4>
-            <p>Synapsida, a clade that contains mammals and their extinct relatives, originated during the Pennsylvanian
-                subperiod , when they split from reptilian and avian lineages.
-                Crown group mammals evolved from earlier mammaliaforms during the Early Jurassic.</p>
+            <p><%= species.SpecyOrigin%></p>
         </div>
 
         <div class="info3  col-xs-5  text-center">
             <span><i class="fab fa-bity"></i></span>
             <h4><b>The first mammal</b></h4>
-            <p> In the early Triassic, most medium to large land carnivore niches were taken over by archosaurs which ,
-                came to include the crocodylomorphs, large cynodonts like Trucidocynodon and traversodontids
-                still occupied large sized carnivorous and herbivorous niches respectively.</p>
+            <p><%= species.SpecyFirst%></p>
         </div>
     </div>
     <div class="product col-xs-12">
-        <div class=" product1 col-xs-2"><img src="imgs/hoa/gấu trúc (2).jpg">
-            <div class=" product1 name_x"><b>Panda</b></div>
-        </div>
-        <div class=" product1 col-xs-2"><img src="imgs/hoa/pro1.jpg">
-            <div class=" product1 name_x"><b>Civet</b></div>
-        </div>
-        <div class=" product1 col-xs-2"><img src="imgs/hoa/pro3.jpg">
-            <div class=" product1 name_x"><b>Panda</b></div>
-        </div>
-        <div class=" product1 col-xs-2"><img src="imgs/hoa/pro8.jpg">
-            <div class=" product1 name_x"><b>Elephants</b></div>
-        </div>
-        <div class=" product1 col-xs-2"><img src="imgs/hoa/báo5.jpg">
-            <div class=" product1 name_x"><b>Cheetah</b></div>
-        </div>
-        <div class=" product1 col-xs-2"><img src="imgs/hoa/ngựa3 (2).jpg">
-            <div class=" product1 name_x"><b>Horse</b></div>
-        </div>
+        <% for (var i=0;i<6;){
+                for(var j=0;j<animals.length;j++){%>
+            <div class=" product1 col-xs-2"><img src="animals[j].AnimalImg1">
+                <div class=" product1 name_x"><b>Panda</b></div>
+            </div>
+        <% i++ }} %>
     </div>
     <div class="tour col-xs-12 ">
         <div class=" col-xs-12 text-center">
