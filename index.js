@@ -35,7 +35,7 @@ app.get('/park/:ParkID',function (req,res) {
     sql_text += "Select * From FD_Animals Where AnimalID In (Select AnimalID From FD_AnimalPark Where ParkID="+ID+");";
     sql_text += "Select SpecyName From FD_Species Where SpecyID In (Select SpecyID From FD_Animals Where AnimalID In (Select AnimalID From FD_AnimalPark Where ParkID="+ID+"));";
     db.query(sql_text,function(err,rows){
-        res.render("parks",{
+        res.render('parks',{
             parks: rows.recordsets[0],
             trips: rows.recordsets[1],
             animals: rows.recordsets[2],
@@ -48,7 +48,7 @@ app.get('/specy/:SpecyID',function (req,res) {
     var sql_text = "Select * From FD_Species WHERE SpecyID = "+ID+";";
     sql_text += "Select * From FD_Animals WHERE SpecyID = "+ID+";";
     db.query(sql_text,function(err,rows){
-        res.render("species",{
+        res.render('species',{
             species: rows.recordsets[0],
             animals: rows.recordsets[1]
         });
