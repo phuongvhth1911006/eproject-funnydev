@@ -49,7 +49,7 @@
     <div class="product col-xs-12">
         <% for (var i=0;i<6;){
                 for(var j=0;j<animals.length;j++){%>
-            <div class=" product1 col-xs-2"><img src="<%= animals[j].AnimalImg1 %>">
+            <div class=" product1 col-xs-2"><a href="/animal/<%= animals[j].AnimalID %>"><img src="<%= animals[j].AnimalImg1 %>"></a>
                 <div class=" product1 name_x"><b>Panda</b></div>
             </div>
         <% i++ }} %>
