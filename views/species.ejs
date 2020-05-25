@@ -6,8 +6,8 @@
     <div class="section" style="position: relative">
         <div class="slide_header">
             <ul class="section">
-                <li class="banner1 " style="background-image: url('<%= "http://eproject-funnydev.herokuapp.com/" + species.SpeciesImg1 %>')"></li>
-                <li class="banner2 " style="background-image: url('<%= "http://eproject-funnydev.herokuapp.com/" + species.SpeciesImg2 %>')"></li>
+                <li class="banner1 " style="background-image: url('<%= species.SpeciesImg1 %>')"></li>
+                <li class="banner2 " style="background-image: url('<%= species.SpeciesImg2 %>')"></li>
             </ul>
         </div>
     </div>
@@ -24,7 +24,7 @@
     <div class=" decr1_hoa col-xs-12 text-center">
         <div class="col-xs-1"></div>
         <div class="col-xs-10">
-            <p><%= species.SpecyDesc%></p>
+            <p><%= species.SpecyDesc %></p>
         </div>
         <div class="col-xs-1"></div>
     </div>
@@ -32,24 +32,24 @@
         <div class="info1  col-xs-5 text-center">
             <span><i class="fab fa-airbnb"></i></span>
             <h4><b>Biological systems</b></h4>
-            <p><%= species.SpecyBioSys%></p>
+            <p><%= species.SpecyBioSys %></p>
         </div>
         <div class="info2  col-xs-2  text-center">
             <span><i class="fab fa-opencart"></i></span>
             <h4><b>Origins</b></h4>
-            <p><%= species.SpecyOrigin%></p>
+            <p><%= species.SpecyOrigin %></p>
         </div>
 
         <div class="info3  col-xs-5  text-center">
             <span><i class="fab fa-bity"></i></span>
             <h4><b>The first mammal</b></h4>
-            <p><%= species.SpecyFirst%></p>
+            <p><%= species.SpecyFirst %></p>
         </div>
     </div>
     <div class="product col-xs-12">
         <% for (var i=0;i<6;){
                 for(var j=0;j<animals.length;j++){%>
-            <div class=" product1 col-xs-2"><img src="animals[j].AnimalImg1">
+            <div class=" product1 col-xs-2"><img src="<%= animals[j].AnimalImg1 %>">
                 <div class=" product1 name_x"><b>Panda</b></div>
             </div>
         <% i++ }} %>
