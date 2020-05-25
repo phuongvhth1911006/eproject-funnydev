@@ -69,10 +69,11 @@ app.get('/contact',function (req,res) {
 });
 
 app.get('/test',function (req,res) {
-    var sql_text = "Select * From FD_Animals ";
+    var sql_text = "Select ParkID,ParkName,ParkImg1,ParkImg2 From FD_Parks;";
+    sql_text += "Select * From FD_Trips";
     db.query(sql_text,function(err,rows){
         res.send(
-            rows.recordsets[0]
+            rows.recordsets
         );
     });
 });
