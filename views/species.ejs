@@ -15,9 +15,9 @@
 <section class="section_hoa">
     <div class="section_hoa decription_hoa col-xs-12">
         <div class="decr1_hoa col-xs-12 text-center ">
-            <h1 class='txtretroshadow'><%= species[0].SpecyName%></h1>
+            <h1 class='txtretroshadow'><%= species[0].SpecyName %></h1>
             <div class="decr1_hoa col-xs-12 text-center ">
-                <p><i><h3><%= species[0].SpecySum%></h3></i></p>
+                <p><i><h3><%= species[0].SpecySum %></h3></i></p>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
                 <a href="/animal/<%= animals[j].AnimalID %>">
                     <img src="http://eproject-funnydev.herokuapp.com/<%= animals[j].AnimalImg1 %>">
                 </a>
-                <div class="product1 name_x"><b>animals[j].AnimalName</b></div>
+                <div class="product1 name_x"><b><%= animals[j].AnimalName %></b></div>
             </div>
         <% i++ }} %>
     </div>
