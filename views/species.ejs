@@ -7,7 +7,7 @@
         <div class="slide_header">
             <ul class="section">
                 <li class="banner1 " style="background-image: url('http://eproject-funnydev.herokuapp.com/<%= species[0].SpecyImg1 %>')"></li>
-                <li class="banner2 " style="background-image: url('http://eproject-funnydev.herokuapp.com/<%= species.SpecyImgq %>')"></li>
+                <li class="banner2 " style="background-image: url('http://eproject-funnydev.herokuapp.com/<%= species[0].SpecyImg2 %>')"></li>
             </ul>
         </div>
     </div>
@@ -50,10 +50,10 @@
         <% for (var i=0;i<6;){
                 for(var j=0;(j<animals.length && i<6);j++){%>
             <div class=" product1 col-xs-2">
-                <a href="/animal/<%= animals[0].AnimalID %>">
-                    <img src="http://eproject-funnydev.herokuapp.com/<%= animals[0].AnimalImg1 %>">
+                <a href="/animal/<%= animals[j].AnimalID %>">
+                    <img src="http://eproject-funnydev.herokuapp.com/<%= animals[j].AnimalImg1 %>">
                 </a>
-                <div class=" product1 name_x"><b>animals[0].AnimalName</b></div>
+                <div class=" product1 name_x"><b>animals[j].AnimalName</b></div>
             </div>
         <% i++ }} %>
     </div>

@@ -50,7 +50,7 @@ app.get('/specy/:SpecyID',function (req,res) {
     db.query(sql_text,function(err,rows){
         res.render('species',{
             species: rows.recordsets[0],
-            animals: rows.recordsets[1]
+            animals: rows.recordsets[1],
         });
     });
 });
