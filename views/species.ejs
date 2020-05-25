@@ -6,7 +6,7 @@
     <div class="section" style="position: relative">
         <div class="slide_header">
             <ul class="section">
-                <li class="banner1 " style="background-image: url('http://eproject-funnydev.herokuapp.com/<%= species.SpecyImg1 %>')"></li>
+                <li class="banner1 " style="background-image: url('http://eproject-funnydev.herokuapp.com/<%= species[0].SpecyImg1 %>')"></li>
                 <li class="banner2 " style="background-image: url('http://eproject-funnydev.herokuapp.com/<%= species.SpecyImgq %>')"></li>
             </ul>
         </div>
@@ -15,16 +15,16 @@
 <section class="section_hoa">
     <div class="section_hoa decription_hoa col-xs-12">
         <div class="decr1_hoa col-xs-12 text-center ">
-            <h1 class='txtretroshadow'><%= species.SpecyName%></h1>
+            <h1 class='txtretroshadow'><%= species[0].SpecyName%></h1>
             <div class="decr1_hoa col-xs-12 text-center ">
-                <p><i><h3><%= species.SpecySum%></h3></i></p>
+                <p><i><h3><%= species[0].SpecySum%></h3></i></p>
             </div>
         </div>
     </div>
     <div class=" decr1_hoa col-xs-12 text-center">
         <div class="col-xs-1"></div>
         <div class="col-xs-10">
-            <p><%= species.SpecyDesc %></p>
+            <p><%= species[0].SpecyDesc %></p>
         </div>
         <div class="col-xs-1"></div>
     </div>
@@ -32,28 +32,28 @@
         <div class="info1  col-xs-5 text-center">
             <span><i class="fab fa-airbnb"></i></span>
             <h4><b>Biological systems</b></h4>
-            <p><%= species.SpecyBioSys %></p>
+            <p><%= species[0].SpecyBioSys %></p>
         </div>
         <div class="info2  col-xs-2  text-center">
             <span><i class="fab fa-opencart"></i></span>
             <h4><b>Origins</b></h4>
-            <p><%= species.SpecyOrigin %></p>
+            <p><%= species[0].SpecyOrigin %></p>
         </div>
 
         <div class="info3  col-xs-5  text-center">
             <span><i class="fab fa-bity"></i></span>
             <h4><b>The first mammal</b></h4>
-            <p><%= species.SpecyFirst %></p>
+            <p><%= species[0].SpecyFirst %></p>
         </div>
     </div>
     <div class="product col-xs-12">
         <% for (var i=0;i<6;){
                 for(var j=0;(j<animals.length && i<6);j++){%>
             <div class=" product1 col-xs-2">
-                <a href="/animal/<%= animals.AnimalID %>">
-                    <img src="http://eproject-funnydev.herokuapp.com/<%= animals.AnimalImg1 %>">
+                <a href="/animal/<%= animals[0].AnimalID %>">
+                    <img src="http://eproject-funnydev.herokuapp.com/<%= animals[0].AnimalImg1 %>">
                 </a>
-                <div class=" product1 name_x"><b>Panda</b></div>
+                <div class=" product1 name_x"><b>animals[0].AnimalName</b></div>
             </div>
         <% i++ }} %>
     </div>

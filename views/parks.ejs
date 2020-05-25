@@ -9,8 +9,8 @@
             <div class="section" style="position: relative">
                 <div class="slide_header">
                     <ul class="section">
-                        <li class="banner1" style="background-image: url('http://eproject-funnydev.herokuapp.com<%= parks.ParkImg1 %>')"></li>
-                        <li class="banner2" style="background-image: url('http://eproject-funnydev.herokuapp.com<%= parks.ParkImg2 %>')"></li>
+                        <li class="banner1" style="background-image: url('http://eproject-funnydev.herokuapp.com<%= parks[i].ParkImg1 %>')"></li>
+                        <li class="banner2" style="background-image: url('http://eproject-funnydev.herokuapp.com<%= parks[i].ParkImg2 %>')"></li>
 
                     </ul>
                 </div>
@@ -60,13 +60,13 @@
                         <p><%= parks[i].ParkInfo1%></p>
                     </div>
                     <div class="col-md-6">
-                        <img class="thumbnail" src="http://eproject-funnydev.herokuapp.com<%= parks.ParkImg3 %>"/>
+                        <img class="thumbnail" src="http://eproject-funnydev.herokuapp.com<%= parks[i].ParkImg3 %>"/>
                     </div>
                 </div>
                 <div class="segment row">
                     <h6 class="title text-center">Weather in <%= parks[i].ParkName%></h6>
                     <div class="col-md-6">
-                        <img class="thumbnail" src="http://eproject-funnydev.herokuapp.com<%= parks.ParkImg4 %>"/>
+                        <img class="thumbnail" src="http://eproject-funnydev.herokuapp.com<%= parks[i].ParkImg4 %>"/>
                     </div>
                     <div class="col-md-6">
                         <p><%= parks[i].ParkInfo2%></p>
@@ -78,7 +78,7 @@
                         <p><%= parks[i].ParkInfo3%></p>
                     </div>
                     <div class="col-md-6">
-                        <img class="thumbnail" src="http://eproject-funnydev.herokuapp.com<%= parks.ParkImg5 %>"/>
+                        <img class="thumbnail" src="http://eproject-funnydev.herokuapp.com<%= parks[i].ParkImg5 %>"/>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     <% for (var i=0;i< trips.length;i++){ %>
                     <div class="col-md-4">
                         <div class="box_b">
-                            <img src="http://eproject-funnydev.herokuapp.com/<%= trips.TripImg %>"/>
+                            <img src="http://eproject-funnydev.herokuapp.com/<%= trips[i].TripImg %>"/>
                             <div class="detail col-md-12">
                                 <div class="col-md-6 text-center">
                                     <h3><%= trips[i].TripDur%> Hour</h3>
@@ -140,7 +140,7 @@
                         <a href="/animal/<%= animals[i].AnimalID %>">
                             <div class="rollitem">
                                 <div class="box_b">
-                                    <img src="http://eproject-funnydev.herokuapp.com<%= animals.AnimalImg1 %>"/>
+                                    <img src="http://eproject-funnydev.herokuapp.com<%= animals[i].AnimalImg1 %>"/>
                                     <div class="name col-md-12">
                                         <h4 class="text-center"><%= animals[i].AnimalName%></h4>
                                     </div>
