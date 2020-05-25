@@ -51,7 +51,7 @@ h1{
     position: relative;
     overflow: hidden;
     transition: transform .4s ease;
-    height: 150px !important;
+    height: 200px !important;
 }
 .product .product1 .name_x{
     position:absolute;
