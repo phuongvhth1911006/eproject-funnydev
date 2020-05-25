@@ -49,8 +49,8 @@ app.get('/specy/:SpecyID',function (req,res) {
     sql_text += "Select * From FD_Animals WHERE SpecyID = "+ID+";";
     db.query(sql_text,function(err,rows){
         res.render("species",{
-            animals: rows.recordsets[0],
-            species: rows.recordsets[1]
+            species: rows.recordsets[0],
+            animals: rows.recordsets[1]
         });
     });
 });
